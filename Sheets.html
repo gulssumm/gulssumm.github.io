@@ -1,0 +1,320 @@
+<!doctype html>
+
+<html class="no-js">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Sheets.html","20120109161558","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1326125758");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Sheets</title>
+
+<meta name="description" content="">
+
+<link rel="stylesheet" href="./meego.css">
+<script src="/web/20120109161558js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+<!--[if IE]><![endif]-->
+<!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+<!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25671318-1']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120109161558/https://ssl' : 'https://web.archive.org/web/20120109161558/http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+</head>
+
+<body>
+	<div class="wrap clearfix">
+		<div class="bg-top">
+			<div class="bg-bot">
+				<div class="header">
+					<a href="https://web.archive.org/web/20120109161558/http://www.nokia.com/" class="nokia dark"><span>Nokia</span>
+					</a>
+					<div class="meego-logo">
+						<a href="/web/20120109161558/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+					</div>
+					<ul class="main-nav"><!-- CHANGED MAIN NAV -->
+                        <li id="nav01"><a href="getting_started.html">Getting <span>Started</span></a></li>
+                        <li id="nav02"><a href="core_ui_framework.html">Core UI <span>Framework</span></a></li>
+                        <li id="nav03"><a href="pattern_library.html">Pattern <span>Library</span></a></li>
+                        <li id="nav04"><a href="component_library.html">Component <span>Library</span></a></li>
+                        <li id="nav05"><a href="develop_your_app.html">Develop <span>Your App</span></a></li>
+                    </ul>
+	</div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+						  <li><a href="#">Patterns</a></li>
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+							  <li><a href="Navigation_Structures.html">Navigation Structures</a></li>
+							  <li><a href="Backstack.html">Backstack</a></li>
+							  <li><a href="Deleting.html">Deleting</a></li>
+							  <li><a href="Empty_States.html">Empty States</a></li>
+							  <li><a href="Error_Handling.html">Error Handling</a></li>
+                              <li><a href="Fast_scroll.html">Fast Scroll</a></li>
+							  <li><a href="Full_Screen.html">Full Screen</a></li>
+							  <li><a href="Launch_Image.html">Launch Image</a></li>
+							  <li><a href="Multiple_selection.html">Multiple Selection</a></li>
+							  <li><a href="Portrait_vs_Landscape.html">Portrait &amp; Landscape</a></li>
+							  <li><a href="Saving_confirmation.html">Saving &amp; Confirmation</a></li>
+							  <li><a href="Search_and_Filter.html">Search &amp; Filter</a></li>
+							  <li><a href="Sheets.html">Sheets</a></li>
+							  <li><a href="Text_Input.html">Text Input</a></li>
+</ul>
+						  </li>
+						  
+						</ul>
+                    </div>
+					<div id="main-content">
+						<div class="pageLeft">
+							<h1 class="page-title">Sheets</h1>
+							<div class="intro">
+
+								<div class="thumbnails">
+									<div class="figure">
+										<a href="#"> <img src="/web/20120109161558im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets_overview-thumb.png" alt="Accessing sheets"> </a>
+										<div class="figcaption">Accessing sheets</div>
+									</div>
+								</div>
+
+								<p>The sheet is a self-contained full screen view that
+									slides up from the bottom of the screen. It is used to
+									interrupt the application's main workflow temporarily and
+									gather or display some key information immediately. A sheet is
+									especially appropriate for isolating a potentially complex or
+									multistep sub-task.</p>
+
+								<h2>Use a sheet when you want to...</h2>
+
+								<ul>
+									<li>Lead a user through a task such as composing an email
+										or calendar event; viewing an image; or editing text fields.
+										Complete tasks in step-by-step wizard for ease and clarity.</li>
+									<li>Display content temporarily and offer some basic
+										options for it. For example, you may want to display an image
+										attached to an email, which the user can 'dismiss' or 'save'.
+									</li>
+									<li>Change work mode or context temporarily. For example,
+										you may want to let users open a browser view after clicking
+										on a URL.</li>
+								</ul>
+
+								<h2>A sheet is not used when...</h2>
+								<p>A task is very simple and requires just one tap (e.g.
+									selecting a value from a short list of options). Use a simple
+									list or dialogue instead.</p>
+
+								<h2>Order of options</h2>
+								<p>In general, positive options appear right / top, while
+									negative options appear left / bottom. Also, we recommend that
+									the Sheet presents its options in the following order:</p>
+								<ul>
+									<li>Primary actions (e.g. Call, View, Play)</li>
+									<li>Secondary actions (e.g. Send Message, Set as
+										Wallpaper)</li>
+									<li>When relevant, Share</li>
+									<li>Negative actions (e.g. Delete, Remove, Unsubscribe)</li>
+								</ul>
+
+							</div>
+
+							<div class="category committed">
+								<h1>Guidelines &amp; Flow</h1>
+
+								<div class="thumbnails">
+									<div class="figure">
+										<a href="#"> <img src="/web/20120109161558im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-guidelines_A-thumb.png" alt="Network connection sheet"> </a>
+										<div class="figcaption">Network connection sheet</div>
+									</div>
+								</div>
+
+								<h2>Guidelines for Sheets</h2>
+								<p>A sheet always slides up from the bottom. Depending on the application's needs, it may or may not cover the status bar. Once the user has dismissed the sheet, it slides down again. The sheet never has a tool bar on the bottom.</p>
+<p>A sheet always displays a button bar on top, holding at
+									least one button. The buttons use text strings and not icons
+									and should always provide an obvious and safe way to exit the
+									sheet. In most cases, the button bar has a negative and
+									positive action. In general, for the negative action, 'Cancel'
+									is used, and for the positive action, the actual verb is used
+									(e.g. 'Next', 'Send' or 'Connect'). 'Back' is discouraged to
+									prevent conveying the association of a hierarchical
+									relationship between the sheet and the previous state or
+								  screen.</p>
+								<p>Where possible, a sheet should continue to rely on the
+									default behavior of simple controls such as combo-box dialogues
+									and switches.</p>
+
+								<h2>Let the sheet flow</h2>
+								<p>In some instances (e.g. adding a new contact), it may be
+									useful to have the sheet set the focus to the first text field
+									and open the keyboard automatically. However, if the user is
+									editing an existing contact, there is no way to know which
+									field the user will want to edit, therefore the focus should
+									not be set automatically. We recommend considering the context
+									of use carefully before using this functionality.</p>
+								<p>Always make sure the visual hierarchy of the screen
+									guides the user through a natural order of the controls. The
+									blue key in the bottom right corner of the keyboard reads
+									'Next'. At the end of a sequence, a confirming label (e.g.
+									'Save' or 'Done' ) will close the keyboard.</p>
+								<p>A sheet never spawns more than one additional sheet.
+									Designs that require a second sheet should be reconsidered and
+									ones requiring a third require a complete redesign. However, in
+									very specific cases, the sheet could spawn a query dialogue
+									(e.g. closing a sheet could spawn a "Save as draft? or Save /
+									Discard" dialogue).</p>
+							</div>
+
+							<div class="category committed">
+								<h1>Composers</h1>
+
+								<div class="thumbnails">
+									<div class="figure">
+										<a href="#"> <img src="/web/20120109161558im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-composers-1-thumb.jpg" alt="Email composer"> </a>
+										<div class="figcaption">Email composer</div>
+									</div>
+
+									<div class="figure">
+										<a href="#"> <img src="/web/20120109161558im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-composers-2-thumb.jpg" alt="Event composer"> </a>
+										<div class="figcaption">Event composer</div>
+									</div>
+
+								</div>
+
+
+								<h2>Composers as Sheets</h2>
+								<p>A composer is typically implemented as a sheet, e.g. for
+									composing an email, SMS message or calendar event. If your
+									application includes a composer as well, consider the following
+									guidelines:</p>
+								<p>
+								<ul>
+									<li>Aside from using the default pickers where possible,
+										also use the default person or content pickers. This will
+										allow users to select recipients of an email, for example, or
+										to specify files for attachment to a calendar event. In such
+										cases, a second sheet can be spawned.</li>
+									<li>Consider hiding some input fields that are either not
+										mandatory or typically don't need to be changed (e.g. 'Repeat'
+										and 'Reminder' in example 2).</li>
+									<li>Activate the primary action button - typically at the
+										top right of the sheet (e.g. Send) - only when the required
+										information is entered.</li>
+								</ul>
+                                
+					      <h2>Note on transitions</h2>
+								<p>The default transition of a closing a sheet is 'slide
+									down'. However, when creating a new object using a composer,
+									consider using a 'slide right' transition to the container
+									holding the new object (e.g. show the day view of the calendar
+									displaying a new calendar event).</p>
+
+
+								<h2>Language for Sheets</h2>
+								<p>The active buttons confirm or cancel the details a user has already added to a list (e.g. name, password, date). As such, they need to be clear and concise — so use just one word wherever possible. Usually, there is a choice of two opposites:&nbsp;'Save-Cancel', 'Add-Cancel', 'Connect-Cancel'.&nbsp;Wherever possible, use a relevant one-word action name.</p>
+<h2>
+<span class="color">Use: <i>Share</i><br> Use: <i>Add</i><br>
+										Use: <i>Connect</i>
+									</span><br> Alternative: <i>Cancel</i>
+								</h2>
+								<br>
+
+								<p>If a user has just input some information (e.g. creating a new contact or editing a photo), the button text should be&nbsp;'Save'. However, if the user's mobile has just completed a download or sync, the button text should be&nbsp;'Done'. If the user wanted to stop the process, he or she could tap&nbsp;'Cancel'. Never use the combination of&nbsp;'Done-Save'&nbsp;together. Buttons can also sometimes appear on their own. For example: </p>
+<h2>
+<span class="color">Use: <i>Go</i><br> Use: <i>Done</i><br>
+										Use: <i>Cancel</i>
+									</span><br> Never Use: <i>Done-Save</i>
+								</h2>
+
+
+							</div>
+							<!--intro-->
+
+						</div>
+						<!--pageLeft-->
+						<div class="aside">
+							<h1>Downloads</h1>
+							<div>
+								<ul>
+									<!--this is a list of the pages in the section-->
+									<li><a href="/web/20120109161558/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_UX_Guidelines.pdf" target="_blank">UX Guidelines</a>
+									</li>
+									<li><a href="/web/20120109161558/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_VisualDesign_Guidelines.pdf" target="_blank">Visual Design Guidelines</a>
+									</li>
+									<li><a href="/web/20120109161558/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_CoreUI_Toolkit_1.6.zip" target="_blank">Toolkit</a>
+									</li>
+								</ul>
+
+							</div>
+
+							<!-- more sections go here -->
+						</div>
+						<!--aside-->
+						<div class="content-paging">
+							<a href="#" class="to-top">back to top</a> <a class="next disabled" href="#">Next topic</a> <span>|</span> <a class="prev disabled" href="#">Prev. topic</a>
+						</div>
+					</div>
+					<!--main-content-->
+				</div>
+				<!--content-->
+			</div>
+			<!--bg-top-->
+		</div>
+		<!--bg-bot-->
+	</div>
+	<!--wrap-->
+	<div class="footer">
+		<div class="foot-content">
+			<a href="https://web.archive.org/web/20120109161558/http://www.nokia.com/" class="nokia white"><span>Nokia</span>
+			</a> <small> <a href="legal.html" class="legal">&copy;2011
+					Nokia Corporation &#45; All rights reserved.</a> </small> <small class="footer-links"> <a href="#">Link one</a> <span>|</span>
+				<a href="#">Link two</a> <span>|</span> <a href="#">Link three</a> </small>
+		</div>
+	</div>
+	<!--footer-->
+	<script src="/web/20120109161558js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+	<script src="/web/20120109161558js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+	<script src="/web/20120109161558js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 16:15:58 Jan 09, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:17 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.791
+  exclusion.robots: 0.044
+  exclusion.robots.policy: 0.029
+  esindex: 0.017
+  cdx.remote: 131.004
+  LoadShardBlock: 325.738 (3)
+  PetaboxLoader3.datanode: 287.827 (4)
+  PetaboxLoader3.resolve: 258.008 (2)
+  load_resource: 247.276
+-->

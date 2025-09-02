@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html class="no-js">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Multiple_selection.html","20120109155558","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1326124558");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Multiple Selection</title>
+    
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="./meego.css">
+    <script src="/web/20120109155558js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25671318-1']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120109155558/https://ssl' : 'https://web.archive.org/web/20120109155558/http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a href="https://web.archive.org/web/20120109155558/http://www.nokia.com/" class="nokia dark"><span>Nokia</span></a>
+					<div class="meego-logo">
+						<a href="/web/20120109155558/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+				    </div>
+                    <ul class="main-nav"><!-- CHANGED MAIN NAV -->
+                        <li id="nav01"><a href="getting_started.html">Getting <span>Started</span></a></li>
+                        <li id="nav02"><a href="core_ui_framework.html">Core UI <span>Framework</span></a></li>
+                        <li id="nav03"><a href="pattern_library.html">Pattern <span>Library</span></a></li>
+                        <li id="nav04"><a href="component_library.html">Component <span>Library</span></a></li>
+                        <li id="nav05"><a href="develop_your_app.html">Develop <span>Your App</span></a></li>
+                    </ul>
+	</div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+						  <li><a href="#">Patterns</a></li>
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+							  <li><a href="Navigation_Structures.html">Navigation Structures</a></li>
+							  <li><a href="Backstack.html">Backstack</a></li>
+							  <li><a href="Deleting.html">Deleting</a></li>
+							  <li><a href="Empty_States.html">Empty States</a></li>
+							  <li><a href="Error_Handling.html">Error Handling</a></li>
+                              <li><a href="Fast_scroll.html">Fast Scroll</a></li>
+							  <li><a href="Full_Screen.html">Full Screen</a></li>
+							  <li><a href="Launch_Image.html">Launch Image</a></li>
+							  <li><a href="Multiple_selection.html">Multiple Selection</a></li>
+							  <li><a href="Portrait_vs_Landscape.html">Portrait &amp; Landscape</a></li>
+							  <li><a href="Saving_confirmation.html">Saving &amp; Confirmation</a></li>
+							  <li><a href="Search_and_Filter.html">Search &amp; Filter</a></li>
+							  <li><a href="Sheets.html">Sheets</a></li>
+							  <li><a href="Text_Input.html">Text Input</a></li>
+</ul>
+						  </li>
+						  
+						</ul>
+                    </div>
+                    <div id="main-content">
+	<div class="pageLeft">
+<h1 class="page-title">Multiple Selection</h1>
+<div class="intro">
+
+<div class="thumbnails">
+
+		<div class="figure">
+			<a href="#"> <img src="/web/20120109155558im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/multiple_selection_comm-thumb.png" alt="Selecting multiple items in a list"> </a>
+			<div class="figcaption">Selecting multiple items in a list</div>
+		</div>
+
+
+		
+	</div>
+    
+	<p>Sometimes users may want to perform an action on multiple items,
+		such as deleting several of them at once. In Nokia N9, the multiple
+		selection functionality is usually accomplished via the Action Menu.</p>
+
+	<h2>Multi-Selection Mode</h2>
+	<p>When the user applies an action to multiple objects in the
+		Action Menu (e.g. "Delete multiple items"), the application view
+		enters multi-selection mode. A View Header appears at the top of the
+		view, displaying the action name. Any action (e.g. "Delete") and
+		cancel buttons should be presented in the Tool Bar.</p>
+	<p>In multi-selection mode, the user can tap to select items in the
+		list or grid. When available, a "Select all" or "Deselect all" toggle,
+		placed in the View Header, can be used to select or deselect all
+		items. Following the selection, pressing the action in the Tool Bar
+		returns the user to the original application view with the action
+		applied. Where applicable, a confirmation dialogue can be displayed
+		before completing the action.</p>
+
+	<h2>Things to consider</h2>
+	<p>While applying actions to multiple objects can be useful and
+		require less user effort, it may require a lot of processing time
+		(e.g. applying a photo filter to all photos in the user's library).
+		Take care when deciding which actions to allow for multiple objects.
+		Sometimes, a simple option to discourage users from applying actions
+		to all objects is to not provide a method to select all.</p>
+	<p>In cases where an action does take a long processing time,
+		provide a Modal Loading Spinner over the application view (in
+		multi-selection mode). When complete, the user should be taken to the
+		original application view.</p>
+
+	
+</div>
+<!--intro-->
+
+
+
+
+	</div><!--pageLeft-->
+	<div class="aside">
+						<h1>Downloads</h1>
+						<div>
+							<ul>
+                              <!--this is a list of the pages in the section-->
+                              
+                              
+                              <li><a href="/web/20120109155558/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_CoreUI_Toolkit_1.6.zip" target="_blank">Toolkit</a></li>
+								<li><a href="/web/20120109155558/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Guidelines.pdf" target="_blank">Icon Guidelines</a></li>
+								<li><a href="/web/20120109155558/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Templates.zip" target="_blank">Icon Templates</a></li>
+                            </ul>
+
+		</div>
+<br>
+<br>
+                    <div>                                                 
+                    <ul>
+						  <li><h1>Resources</h1></li><!-- CHANGED FIXED LINKS -->
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+                            <li><a href="https://web.archive.org/web/20120109155558/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-selectiondialog.html" target="_blank">MultiselectionDialog</a> </li>
+							</ul>
+						  </li>
+
+</div>
+	</div><!--aside-->
+                    <div class="content-paging">
+			<a href="#" class="to-top">back to top</a>
+			<a class="next disabled" href="#">Next topic</a>
+			<span>|</span>
+			<a class="prev disabled" href="#">Prev. topic</a>
+		</div>
+    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+    </div><!--wrap-->
+	<div class="footer">
+		<div class="foot-content">
+			<a href="https://web.archive.org/web/20120109155558/http://www.nokia.com/" class="nokia white"><span>Nokia</span></a>
+			<small>
+				<a href="legal.html" class="legal">&copy;2011 Nokia Corporation &#45; All rights reserved.</a>
+			</small>
+			<small class="footer-links">
+				<a href="#">Link one</a>
+				<span>|</span>
+				<a href="#">Link two</a>
+				<span>|</span>
+				<a href="#">Link three</a>
+			</small>
+		</div>
+	</div><!--footer-->
+    <script src="/web/20120109155558js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120109155558js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120109155558js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 15:55:58 Jan 09, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:07 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.623
+  exclusion.robots: 0.034
+  exclusion.robots.policy: 0.021
+  esindex: 0.013
+  cdx.remote: 120.183
+  LoadShardBlock: 600.274 (3)
+  PetaboxLoader3.datanode: 275.748 (4)
+  PetaboxLoader3.resolve: 327.044 (2)
+  load_resource: 201.01
+-->

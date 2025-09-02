@@ -1,0 +1,400 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { background: transparent; border: 0; font-size: 100%; margin: 0; padding: 0; outline: 0; vertical-align: baseline; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, img, menu, nav, section { display: block; }
+ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+a { background: transparent; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { border: 0; border-top: 1px solid #ccc; display: block; height: 1px; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+/*reset end*/
+
+.clearfix:before,
+.clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+
+
+@font-face {
+	font-family: "NokiaPureTextRegular";
+	src: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureText/nokiapuretext-webfont.eot");
+	src: local("☺"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureText/nokiapuretext-webfont.woff") format("woff"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureText/nokiapuretext-webfont.ttf") format("truetype"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureText/nokiapuretext-webfont.svg#webfontMBlQ7dmP") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "NokiaPureHeadlineLight";
+	src: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinelt-webfont.eot");
+	src: local("☺"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinelt-webfont.woff") format("woff"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinelt-webfont.ttf") format("truetype"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinelt-webfont.svg#webfontqH9phLTz") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "NokiaPureHeadlineBold";
+	src: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinebd-webfont.eot");
+	src: local("☺"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinebd-webfont.woff") format("woff"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinebd-webfont.ttf") format("truetype"), url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/fonts/nokiaPureHeadline/nokiapureheadlinebd-webfont.svg#webfontV0SajXFw") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+.off-screen { position: absolute; right: 0px; bottom: 0; }
+.clear-left { clear: left; }
+h1,h2,h3,h4,h5,h6 { font-family: "NokiaPureHeadlineLight", Arial, Helvetica, sans-serif; font-weight: normal; }
+.start h1 { font-family: "NokiaPureHeadlineBold", Arial, Helvetica, sans-serif; }
+h1 { clear: left; font-size: 20px; margin: 0 0 1em 0; }
+h1.page-title { font-size: 40px; }
+.uncommitted h1 { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/uncommitted.png") no-repeat 100% 0; padding-top: 5px; }
+h2, h3 { font-size: 18px; margin: 25px 0 5px 0; }
+h3 { color: #7ec002; }
+
+.getting h3 { color: #7ec002; }    
+.core h3 { color: #009ed5; }    
+.pattern h3 { color: #f35095; }    
+.component h3 { color: #6300bb; }    
+.develop h3 { color: #ea6409; }
+
+p { margin: 0 0 1em 0; }
+
+p.two-col { float: right; width: 308px; }
+p.three-col { float: right; width: 467px; }
+
+.figcaption.one-col { width: 149px; }
+.figcaption.two-col { width: 308px; }
+a { text-decoration: none; }
+
+.getting a:hover,
+.getting .color,
+.getting .color a { color: #7ec002; }
+.core a:hover,
+.core .color { color: #009ed5; }
+.pattern a:hover,
+.pattern .color { color: #f35095; }
+.component a:hover,
+.component .color { color: #6300bb; }
+.develop a:hover,
+.develop .color { color: #ea6409; }
+
+a:active, a:focus { outline: none; }
+
+button, .nokia span, .off-screen { position: absolute; left: -999999px; }
+
+
+body { background: #e8e8e8; color: #333; font: normal 12px/1.231 "NokiaPureTextRegular", Arial, Helvetica, sans-serif; }
+.frameBody { background: none; }
+
+  .wrap { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bg-page-edges.png") repeat-y; margin: 0 auto; width: 984px; }
+	.bg-top { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bg-page-top.png") no-repeat; padding: 20px 0 0; }
+		.bg-bot { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bg-page-bot.png") no-repeat 0 100%; }
+    .legal .bg-top { padding: 100px 0 0 0; }
+        .legal .bg-bot { padding:0 100px; }
+body.home { background: #e8e8e8 url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/home-stripe.png") repeat-x 0 498px; }        
+  .home .wrap { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/home-bg-page-edges.png") repeat-y; width: 1100px; position: relative; }
+	.home .bg-top { background: none; padding: 0; }
+		.home .bg-bot { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/home-bg-page-bot.png") no-repeat 0 100%; }
+  
+			.header {  }
+				.header h1 {  }
+				.search-box { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/search-bg.png") no-repeat; clear: right; float: right; width: 307px; height: 28px; }
+					.search-box input { background: none; width: 290px; margin: 5px 0 0 9px; }
+					
+				.meego-logo { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/N9UXLogo.png") no-repeat; float: none; margin-bottom: 45px; width: 391px; height: 30px; }
+                    .meego-logo a { display: block; width: 100%; height: 100%; }
+				.nokia { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/nokia-logo-dark.png") no-repeat; clear: right; display: block; float: right; width: 61px; height: 11px; }
+				.home .nokia.dark { position: absolute; right: 74px; top: 20px; }
+			  
+			  ul.main-nav { height: 43px; position:relative; }
+				.main-nav li,
+				  .main-nav a { color: #272727; display: inline-block; float: left; position:relative; }
+				  
+				  .main-nav a { border-bottom: 1px solid #272727; font-size: 18px; font-weight: bold; line-height: 1; text-transform: uppercase; margin: 0 5px 0 0; padding: 0 0 6px; width: 154px; }
+				  .main-nav li:last-child a { width: 149px; }
+				  
+				  .main-nav #nav01 a:hover,
+				  .main-nav #nav01.selected a { border-color: #7ec002; color: #7ec002; }
+				  
+				  .main-nav #nav02 a:hover,
+				  .main-nav #nav02.selected a { border-color: #009ed5; color: #009ed5; }
+				  
+				  .main-nav #nav03 a:hover,
+				  .main-nav #nav03.selected a { border-color: #f35095; color: #f35095; }
+				  
+				  .main-nav #nav04 a:hover,
+				  .main-nav #nav04.selected a { border-color: #6300bb; color: #6300bb; }
+				  
+				  .main-nav #nav05 a:hover,
+				  .main-nav #nav05.selected a { border-color: #ea6409; color: #ea6409; }
+				  
+				  .main-nav .selected a { border-bottom-width: 4px; margin-top: -3px; }
+				  
+					.main-nav a span { clear: left; color: #292929; display: block; font-weight: normal; }
+					.main-nav a:hover span,
+					.main-nav .selected a span { color: #292929; }
+                
+                .home .main-nav { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/home-nav-hover.jpg") no-repeat 0 -1345px; height: 269px; position: relative; padding: 0 0 90px 130px; }
+                    .home .main-nav li { z-index: 10; }
+                    .home .main-nav li a { border: none; margin: 63px 24px 0 0; width: 148px; }
+                        .home .main-nav a span { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/home-nav-hover.jpg") no-repeat -200% -200%; display: block; position: absolute; left: 0; top: 0; height: 167px; }
+                        .home .main-nav a span.bg { font-weight: bold; text-transform: uppercase; }
+                        .home .main-nav #nav01 a span { color: #7ec002; }
+                        .home .main-nav #nav02 a span { color: #009ed5; }
+                        .home .main-nav #nav03 a span { color: #f35095; }
+                        .home .main-nav #nav04 a span { color: #6300bb; }
+                        .home .main-nav #nav05 a span { color: #ea6409; }
+                        .home .main-nav #nav05 { z-index: 5; }
+                  
+                .home .main-nav a span span { color: #272727 !important; display: block; position: relative; width: 148px; }
+                    .home .main-nav a:hover,
+                      .home .main-nav a:hover span,
+                          .home .main-nav a:hover span span { border-color: #fff !important; color: #fff !important; width: 148px; height: 188px; }
+                          
+                      .home .main-nav a:hover span { width: 222px; height: 206px; }
+                      .home .main-nav #nav01 a:hover span.bg { background-position: -120px 0; left: -10px; top: -63px; padding: 63px 0 0 10px; }
+                      .home .main-nav #nav02 a:hover span.bg { background-position: -294px -269px; left: -10px; top: -63px; padding: 63px 0 0 10px; }
+                      .home .main-nav #nav03 a:hover span.bg { background-position: -466px -538px; left: -10px; top: -63px; padding: 63px 0 0 10px; }
+                      .home .main-nav #nav04 a:hover span.bg { background-position: -626px -807px; left: -20px; top: -63px; padding: 63px 0 0 20px; width: 165px; }
+                      .home .main-nav #nav05 a:hover span.bg { background-position: -749px -1076px; left: -69px; top: -63px; padding: 63px 0 0 69px; }
+                      
+                .home .main-nav a span.text { border-top: 1px solid #272727; font-size: 12px; line-height: 15px; margin: 4px 0 0 0; padding: 20px 0 0 0; text-transform: none; }
+                
+                .home .main-nav a span.phone,
+                .home .main-nav a:hover span.phone { display: block; height: 270px; position: absolute; top: -343px; left: 103px; width: 122px; }
+                .home .main-nav #nav02 a span.phone,
+                .home .main-nav #nav02 a:hover span.phone { height: 249px; position: absolute; top: -329px; left: 61px; width: 121px; }
+                .home .main-nav #nav03 a span.phone,
+                .home .main-nav #nav03 a:hover span.phone { height: 249px; position: absolute; top: -329px; left: 18px; width: 121px; }
+                .home .main-nav #nav04 a span.phone,
+                .home .main-nav #nav04 a:hover span.phone { height: 249px; position: absolute; top: -329px; left: -25px; width: 121px; }
+                .home .main-nav #nav05 a span.phone,
+                .home .main-nav #nav05 a:hover span.phone { height: 265px; position: absolute; top: -341px; left: -68px; width: 120px; }
+                
+                
+		  
+                .content { clear: left; padding: 80px 0; position: relative;}
+                    .left-nav { display: block; float: left; margin: 0 10px 0 0; min-height: 100px; width: 139px; }
+                        .js .left-nav > ul { display: none; }
+                            .left-nav li li { line-height: 1em; }
+                        
+                            .left-nav li a { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bullets.png") no-repeat -100px 100px;  color: #333; display: block; font-size: 14px; line-height: 24px; padding: 0 0 10px; text-transform: uppercase; }
+                                
+                                .left-nav li li a { line-height: 14px; font-size: 12px; margin-left: -14px; padding: 0 0 10px 14px; text-transform: none; }
+                            
+                                .getting .left-nav li.selected a { background-position: 1px -46px; color: #7ec002; }
+                                .getting .left-nav li li a:hover { color: #7ec002; }
+                                
+                                .core .left-nav li.selected a { background-position: 1px -96px; color: #009ed5; }
+                                .core .left-nav li li a:hover { color: #009ed5; }
+                                
+                                .pattern .left-nav li.selected a { background-position: 1px -146px; color: #f35095; }
+                                .pattern .left-nav li li a:hover { color: #f35095; }
+                                
+                                .component .left-nav li.selected a { background-position: 1px -196px; color: #6300bb; }
+                                .component .left-nav li li a:hover { color: #6300bb; }
+                                
+                                .develop .left-nav li.selected a { background-position: 1px -246px; color: #ea6409; }
+                                .develop .left-nav li li a:hover { color: #ea6409; }
+                            
+                        
+                        .nav-title { margin-left: -14px; padding-left: 14px !important;}
+                        .getting .nav-title { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/left-nav-arrow-getting.png") no-repeat 0 -40px; }
+                        .getting .nav-title:hover { background-position: 0 -140px; }
+                        .getting .closed.nav-title { background-position: 0 8px; }
+                        .getting .closed.nav-title:hover { background-position: 0 -92px; }
+                        
+                        .core .nav-title { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/left-nav-arrow-core.png") no-repeat 0 -40px; }
+                        .core .nav-title:hover { background-position: 0 -140px; }
+                        .core .closed.nav-title { background-position: 0 8px; }
+                        .core .closed.nav-title:hover { background-position: 0 -92px; }
+                        
+                        .pattern .nav-title { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/left-nav-arrow-native.png") no-repeat 0 -40px; }
+                        .pattern .nav-title:hover { background-position: 0 -140px; }
+                        .pattern .closed.nav-title { background-position: 0 8px; }
+                        .pattern .closed.nav-title:hover { background-position: 0 -92px; }
+                        
+                        .component .nav-title { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/left-nav-arrow-building.png") no-repeat 0 -40px; }
+                        .component .nav-title:hover { background-position: 0 -140px; }
+                        .component .closed.nav-title { background-position: 0 8px; }
+                        .component .closed.nav-title:hover { background-position: 0 -92px; }
+                        
+                        .develop .nav-title { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/left-nav-arrow-integrate.png") no-repeat 0 -40px; }
+                        .develop .nav-title:hover { background-position: 0 -140px; }
+                        .develop .closed.nav-title { background-position: 0 8px; }
+                        .develop .closed.nav-title:hover { background-position: 0 -92px; }
+                        
+                        .up li { display: none; }
+			  
+			  #main-content { float: left; width: 825px; }
+                            .pageLeft { float: left; position: relative; margin: 0 0 0 10px; width: 626px; }
+                            .pageLeft h1 { border-bottom: 1px solid #272727;}
+                            .pageLeft.start h1 { border: none; font-size: 2em;  }
+                            .pageLeft.start.getting h1 { color: #7ec002; }
+                            .pageLeft.start.core h1 { color: #009ed5; }
+                            .pageLeft.start.pattern h1 { color: #f35095; }
+                            .pageLeft.start.component h1 { color: #6300bb; }
+                            .pageLeft.start.develop h1 { color: #ea6409; }
+                                h1.page-title { float: none; padding-right: 142px; }
+                            .pageLeft.start p { font-family: "NokiaPureHeadlineLight", Arial, Helvetica, sans-serif; font-size: 18px; }
+                                    
+                                    .page-links  { float: left; margin: -36px 0 23px 0;  width: 626px;}
+                                            .page-links * { color: #000; display: inline-block; float: left; font-size: .95em; }
+                            .page-links span { margin: 0 10px; }
+                        
+                .start .filter { display: none; }
+                .filter { position: absolute; right: 10px; top: 21px; }
+                    .filter a { color: #000; display: inline-block; float: right; height: 17px;  line-height: 17px; padding: 0 10px; }
+                    .filter a.all { padding: 0 20px; }
+                    
+                    
+                    .filter a.selected,
+                    .filter a.selected:hover { color: #fff !important; }
+                    
+                    .getting .filter a:hover { color: #7ec002; }
+                    .getting .filter a.selected { background: #7ec002; }
+                    
+                    .core .filter a:hover { color: #009ed5; }
+                    .core .filter a.selected { background: #009ed5; }
+                    
+                    .pattern .filter a:hover { color: #f35095; }
+                    .pattern .filter a.selected { background: #f35095; }
+                    
+                    .component .filter a:hover { color: #6300bb; }
+                    .component .filter a.selected { background: #6300bb; }
+                    
+                    .develop .filter a:hover { color: #ea6409; }
+                    .develop .filter a.selected { background: #ea6409; }
+                    
+                    
+                    .getting .filter,
+                    .pattern .filter{ display: none; }
+                    
+				.category-title h1 { font-size: 2em; border-bottom: 1px solid #333; margin-right: 10px; }
+                
+			  
+		.intro { margin-right: 10px }
+                    .intro h1 { width: 100%; }
+                    .intro ul { padding-bottom: 10px; }
+                    ul.important-list { color: #7ec002; font-size: 20px; font-family:"NokiaPureHeadlineLight"; line-height: 30px; }
+                        ul.important-list li { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bullet.png") no-repeat 0 12px; margin-left: -15px; padding:0 0 3px 15px;}
+				  
+				.category { float: left; margin: 20px 0; overflow: hidden; width: 636px; }
+					.thumbnails { float: left; width: 636px; }
+						.thumbnails .figure { float: left; margin: 0 10px 20px 0; }
+							.figcaption { padding: 5px 0 0;}
+							.figcaption a { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/magnify-icon.png") no-repeat; padding: 0 0 0 15px;}
+                            .getting .figcaption a { background-position: 0 7px; color: #7ec002; }
+                            .core .figcaption a { background-position: 0 -198px; color: #009ed5; }
+                            .pattern .figcaption a { background-position: 0 -393px; color: #f35095; }
+                            .component .figcaption a { background-position: 0 -598px; color: #6300bb; }
+                            .develop .figcaption a { background-position: 0 -798px; color: #ea6409; }
+                            
+                    .intro ul,
+                    .category ul { padding: 0 0 10px 15px; }
+                        .intro li,
+                        .category li{ background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bullet.png") no-repeat 0 4px; margin-left: -15px; padding: 0 0 3px 15px; }
+                            
+					a.title:hover { color: inherit; }
+					
+                    
+                .start .figure { float: right; }
+			  
+				.aside { float: left; margin: 25px 0 0 20px;  width: 159px; }
+                    .aside h1 { border-bottom: 1px solid #272727; line-height: 24px; font-weight: normal; }
+                        .getting .aside h1 { color: #7ec002; }
+                        .core .aside h1 { color: #009ed5; }
+                        .pattern .aside h1 { color: #f35095; }
+                        .component .aside h1 { color: #6300bb; }
+                        .develop .aside h1 { color: #ea6409; }
+					.aside a {color: #272727; display: block; }
+                
+                .flash-wrap { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/images/playbook/n9_device.png") no-repeat; display: block; float: right; padding: 79px 0 0 56px; width: 297px; height: 571px; }
+                
+                .content-paging { position: absolute; left: 149px; bottom: 10px; width: 646px; }
+                    .content-paging * { color: #383838; float: right; }
+                    .content-paging a { padding: 0 10px; }
+                    .content-paging a.disabled { color: #bebebe; cursor: default; }
+                    .content-paging a.to-top { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/arrow-top.png") no-repeat 0 5px; float: left; }
+                    a.prev { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/arrow-prev-next.png") no-repeat 0 -46px; }
+                    a.prev.disabled { background-position: 0 -146px !important; }
+                    a.next { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/arrow-prev-next.png") no-repeat 100% 4px; }
+                    a.next.disabled { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/arrow-prev-next.png") no-repeat 100% -96px !important; }
+                    .content-paging span { position: relative; top: -2px; }
+                    
+                    .getting a:hover.to-top { background-position: 0 -46px; }
+                    .core a:hover.to-top { background-position: 0 -97px; }
+                    .pattern a:hover.to-top { background-position: 0 -148px; }
+                    .component a:hover.to-top { background-position: 0 -199px; }
+                    .develop a:hover.to-top { background-position: 0 -250px; }
+                    
+                    .getting a:hover.prev { background-position: 0 -246px; }
+                    .core a:hover.prev { background-position: 0 -346px; }
+                    .pattern a:hover.prev { background-position: 0 -446px; }
+                    .component a:hover.prev { background-position: 0 -546px; }
+                    .develop a:hover.prev { background-position: 0 -646px; }
+                    
+                    .getting a:hover.next { background-position: 100% -196px; }
+                    .core a:hover.next { background-position: 100% -296px; }
+                    .pattern a:hover.next { background-position: 100% -396px; }
+                    .component a:hover.next { background-position: 100% -496px; }
+                    .develop a:hover.next { background-position: 100% -596px; }
+				
+			.footer { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/bg-footer.png") no-repeat center 0; color: #565656; display: block; float: left; clear: left; width: 100%; height: 51px; }
+                .foot-content { margin: 0 auto; width: 984px; }
+				.nokia.white { background: url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/nokia-logo-white.png") no-repeat; margin: 22px 53px 0 0; }
+				.footer small { float: left; margin: 19px 0 0 63px; width: 450px; }
+				/*.footer small.footer-links { clear: right; float: right; margin: 0 53px 0 0; width: auto; }*/
+				.footer small.footer-links { display: none;}
+					/*.footer-links span { position: relative; top: -2px; padding: 0 4px; }*/
+					.footer a { color: #565656; }
+                    
+			.home .footer { background:#e8e8e8 url("/web/20120504063123im_/http://harmattan-dev.nokia.com/docs/ux/UI/home-bg-footer.png") no-repeat; }
+
+  
+  
+  /*spacecakes*/
+  
+  
+  #TBD {
+	border: 5px solid #F00;
+}
+
+.LOOKTEXT {
+	background-color:#FF0;
+}
+
+.TextTBD {
+	color: #F00;
+}
+
+/*
+     FILE ARCHIVED ON 06:31:23 May 04, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:34:47 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.824
+  exclusion.robots: 0.04
+  exclusion.robots.policy: 0.026
+  esindex: 0.014
+  cdx.remote: 215.438
+  LoadShardBlock: 750.218 (3)
+  PetaboxLoader3.datanode: 591.622 (4)
+  PetaboxLoader3.resolve: 278.546 (2)
+  load_resource: 173.045
+*/

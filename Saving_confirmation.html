@@ -1,0 +1,265 @@
+<!doctype html>
+
+<html class="no-js">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Saving_confirmation.html","20120109161553","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1326125753");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Saving &amp; Confirmation</title>
+    
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="./meego.css">
+    <script src="/web/20120109161553js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25671318-1']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120109161553/https://ssl' : 'https://web.archive.org/web/20120109161553/http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a href="https://web.archive.org/web/20120109161553/http://www.nokia.com/" class="nokia dark"><span>Nokia</span></a>
+					<div class="meego-logo">
+						<a href="/web/20120109161553/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+				    </div>
+                    <ul class="main-nav"><!-- CHANGED MAIN NAV -->
+                        <li id="nav01"><a href="getting_started.html">Getting <span>Started</span></a></li>
+                        <li id="nav02"><a href="core_ui_framework.html">Core UI <span>Framework</span></a></li>
+                        <li id="nav03"><a href="pattern_library.html">Pattern <span>Library</span></a></li>
+                        <li id="nav04"><a href="component_library.html">Component <span>Library</span></a></li>
+                        <li id="nav05"><a href="develop_your_app.html">Develop <span>Your App</span></a></li>
+                    </ul>
+	</div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+						  <li><a href="#">Patterns</a></li>
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+							  <li><a href="Navigation_Structures.html">Navigation Structures</a></li>
+							  <li><a href="Backstack.html">Backstack</a></li>
+							  <li><a href="Deleting.html">Deleting</a></li>
+							  <li><a href="Empty_States.html">Empty States</a></li>
+							  <li><a href="Error_Handling.html">Error Handling</a></li>
+                              <li><a href="Fast_scroll.html">Fast Scroll</a></li>
+							  <li><a href="Full_Screen.html">Full Screen</a></li>
+							  <li><a href="Launch_Image.html">Launch Image</a></li>
+							  <li><a href="Multiple_selection.html">Multiple Selection</a></li>
+							  <li><a href="Portrait_vs_Landscape.html">Portrait &amp; Landscape</a></li>
+							  <li><a href="Saving_confirmation.html">Saving &amp; Confirmation</a></li>
+							  <li><a href="Search_and_Filter.html">Search &amp; Filter</a></li>
+							  <li><a href="Sheets.html">Sheets</a></li>
+							  <li><a href="Text_Input.html">Text Input</a></li>
+</ul>
+						  </li>
+						  
+						</ul>
+                    </div>
+                    <div id="main-content">
+	<div class="pageLeft">
+<h1 class="page-title">Saving &amp; Confirmation</h1>
+<div class="intro">
+
+<p>Two general options exist when it comes to providing a way for a user to confirm an action: automatically and manually.</p>
+</div>
+<!--intro-->
+
+<div class="category committed">
+	<h1>Automatically</h1>
+    
+    	<div class="thumbnails">
+
+        <div class="figure">
+			<a href="#"> <img src="/web/20120109161553im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/confirm_actions_1-thumb.png" alt="Composing an email and cancelling"> </a>
+			<div class="figcaption">Settings confirmed automatically</div>
+		</div>
+
+		
+	</div>
+
+
+	<p>With this option, the requirement to save is implicit and therefore does not need to be confirmed with an additional interaction.</p>
+<h2>How this option works</h2>
+	<p>Since the user is not required to execute a confirmation action, you do not need to provide &quot;Save&quot;, &quot;Confirm&quot; or similar buttons. When the user taps the Back button to move away from the screen, any changes he or she has made should be saved automatically.</p>
+<h2>When to use this option</h2>
+	<p>This option works best when changes require a simple set of actions that can be easily reversed. An example of this would be an &quot;in-and-out&quot; type of flow where the user goes in to the application to make a simple change and then naturally uses the Back button to return to the previous view. Do not use this option for complex, multi-step editing processes.</p>
+<p>Some examples where automatic confirmation works well:</p>
+
+	<ul>
+		<li>Selecting/deselecting Pickers (search filters, recipients in
+			a contact list, etc.)</li>
+		<li>Modifying Settings</li>
+	</ul>
+
+
+
+</div>
+<!--category-->
+
+
+<div class="category committed">
+	<h1>Manually</h1>
+    
+    	<div class="thumbnails">
+
+		<div class="figure">
+			<a href="#"> <img src="/web/20120109161553im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/confirm_addaccount-thumb.png" alt="Changes are saved automatically"> </a>
+			<div class="figcaption">Adding an  account</div>
+		</div>
+
+		<div class="figure">
+			<a href="#"> <img src="/web/20120109161553im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/confirm_addcontact-thumb.png" alt="Changes are saved automatically"> </a>
+			<div class="figcaption">Adding a contact</div>
+		</div>
+
+
+	</div>
+
+
+	<p>The second option is to provide a very explicit means of confirming or cancelling, i.e. with a &quot;Save&quot; or &quot;Cancel&quot; button. A Back button is unavailable in this option, since the user is required to provide a confirmation.</p>
+<h2>How this option works</h2>
+
+	<p>With this option, a button such as "Save", "Confirm", "Delete",
+		etc. is provided. Selecting one of these buttons confirms the user's
+		action, completes the process, and takes the user to a new view. A
+		"Cancel" button is also available that should return the user to the
+		previous view. </p>
+
+
+	<h2>When to use this option</h2>
+
+	<p>We recommend using this option in complex editing situations,
+		i.e. when an action cannot be easily reversed. For example, when
+		composing an email, the user is presented with "Send" and "Cancel"
+		buttons. When cropping an image, "Crop" and "Cancel" buttons are
+		available.</p>
+	<p>If an action steps the user forward through a set of actions, a
+		manual confirmation should be used. Other examples:</p>
+
+	<ul>
+		<li>Sharing a picture</li>
+		<li>Editing a video</li>
+	</ul>
+
+	<h2>Additional considerations</h2>
+
+	<p>When using text buttons, consider their active and inactive
+		states. In the options above, the confirming action should only become
+		active once the user has made an edit or change. A "Cancel" button
+		should always be accessible to return the user to the previous view.</p>
+	
+</div>
+
+<div class="category committed">
+	<h1>Query confirmation</h1>
+    
+    	<div class="thumbnails">
+
+		<div class="figure">
+			<a href="#"> <img src="/web/20120109161553im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/confirm_actions_3-thumb.png" alt="Composing an email and cancelling"> </a>
+			<div class="figcaption">Composing an email and cancelling</div>
+		</div>
+
+	<p>Consider providing a prompt for irreversible or time-consuming tasks. While lightweight actions do not impose a huge problem if changes are lost (e.g. dismissing a modification in the image editor), for more time-consuming actions, such as composing an email, it may be wise to offer a "Save as Draft" option.</p>	
+    
+		</div>
+</div>
+	</div><!--pageLeft-->
+	<div class="aside">
+						<h1>Downloads</h1>
+						<div>
+							<ul>
+                              <!--this is a list of the pages in the section-->
+                              
+                              
+                              <li><a href="/web/20120109161553/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_CoreUI_Toolkit_1.6.zip" target="_blank">Toolkit</a></li>
+								<li><a href="/web/20120109161553/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Guidelines.pdf" target="_blank">Icon Guidelines</a></li>
+								<li><a href="/web/20120109161553/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Templates.zip" target="_blank">Icon Templates</a></li>
+                            </ul>
+
+		</div>
+	
+		<!-- more sections go here -->
+	</div><!--aside-->
+
+                    <div class="content-paging">
+			<a href="#" class="to-top">back to top</a>
+			<a class="next disabled" href="#">Next topic</a>
+			<span>|</span>
+			<a class="prev disabled" href="#">Prev. topic</a>
+		</div>
+    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+    </div><!--wrap-->
+	<div class="footer">
+		<div class="foot-content">
+			<a href="https://web.archive.org/web/20120109161553/http://www.nokia.com/" class="nokia white"><span>Nokia</span></a>
+			<small>
+				<a href="legal.html" class="legal">&copy;2011 Nokia Corporation &#45; All rights reserved.</a>
+			</small>
+			<small class="footer-links">
+				<a href="#">Link one</a>
+				<span>|</span>
+				<a href="#">Link two</a>
+				<span>|</span>
+				<a href="#">Link three</a>
+			</small>
+		</div>
+	</div><!--footer-->
+    <script src="/web/20120109161553js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120109161553js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120109161553js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 16:15:53 Jan 09, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:11 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 3.746
+  exclusion.robots: 0.03
+  exclusion.robots.policy: 0.02
+  esindex: 0.012
+  cdx.remote: 71.895
+  LoadShardBlock: 150.087 (3)
+  PetaboxLoader3.datanode: 163.511 (4)
+  load_resource: 128.327
+  PetaboxLoader3.resolve: 89.978
+-->

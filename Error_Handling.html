@@ -1,0 +1,262 @@
+<!doctype html>
+
+<html class="no-js">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Error_Handling.html","20120109161339","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1326125619");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Error Handling</title>
+    
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="./meego.css">
+    <script src="/web/20120109161339js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25671318-1']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120109161339/https://ssl' : 'https://web.archive.org/web/20120109161339/http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a href="https://web.archive.org/web/20120109161339/http://www.nokia.com/" class="nokia dark"><span>Nokia</span></a>
+					<div class="meego-logo">
+						<a href="/web/20120109161339/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+				    </div>
+                    <ul class="main-nav"><!-- CHANGED MAIN NAV -->
+                        <li id="nav01"><a href="getting_started.html">Getting <span>Started</span></a></li>
+                        <li id="nav02"><a href="core_ui_framework.html">Core UI <span>Framework</span></a></li>
+                        <li id="nav03"><a href="pattern_library.html">Pattern <span>Library</span></a></li>
+                        <li id="nav04"><a href="component_library.html">Component <span>Library</span></a></li>
+                        <li id="nav05"><a href="develop_your_app.html">Develop <span>Your App</span></a></li>
+                    </ul>
+	</div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+						  <li><a href="#">Patterns</a></li>
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+							  <li><a href="Navigation_Structures.html">Navigation Structures</a></li>
+							  <li><a href="Backstack.html">Backstack</a></li>
+							  <li><a href="Deleting.html">Deleting</a></li>
+							  <li><a href="Empty_States.html">Empty States</a></li>
+							  <li><a href="Error_Handling.html">Error Handling</a></li>
+                              <li><a href="Fast_scroll.html">Fast Scroll</a></li>
+							  <li><a href="Full_Screen.html">Full Screen</a></li>
+							  <li><a href="Launch_Image.html">Launch Image</a></li>
+							  <li><a href="Multiple_selection.html">Multiple Selection</a></li>
+							  <li><a href="Portrait_vs_Landscape.html">Portrait &amp; Landscape</a></li>
+							  <li><a href="Saving_confirmation.html">Saving &amp; Confirmation</a></li>
+							  <li><a href="Search_and_Filter.html">Search &amp; Filter</a></li>
+							  <li><a href="Sheets.html">Sheets</a></li>
+							  <li><a href="Text_Input.html">Text Input</a></li>
+</ul>
+						  </li>
+						  
+						</ul>
+                    </div>
+                    <div id="main-content">
+	<div class="pageLeft">
+<h1 class="page-title">Error Handling</h1>
+<div class="intro">
+	<div class="thumbnails">
+
+		<div class="figure">
+			<a href="#"> <img src="/web/20120109161339im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/error_handling_1-thumb.png" alt="Types of error messages"> </a>
+			<div class="figcaption">Types of error messages</div>
+		</div>
+	</div>
+    
+	<p>Nokia N9 does not handle error messages for individual
+		applications. Therefore, it will be your responsibility to specify the
+		relevant error messages for your application.</p>
+	<p>If you can avoid the error (e.g. by making a change to the UI),
+		you should do so. However, if a change won't alleviate the error, then
+		you will need to create an error message.</p>
+	<p>There are three display options for error messages:</p>    
+    <ul>
+	    <li>Inline message</li>
+		<li>Information banner</li>
+		<li>Dialogue</li>
+	</ul>
+    </div>
+    
+<div class="category committed">
+<h1>Inline message</h1>
+	<div class="thumbnails">
+    	<div class="figure">
+			<a href="#"> <img src="/web/20120109161339im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/error_handling_2-thumb.png" alt="Example 1. Display error message while
+				filling out the form."> </a>
+			<div class="figcaption">Example 1. Display an error message while
+				filling out a form.</div>
+		</div>
+		<div class="figure">
+			<a href="#"> <img src="/web/20120109161339im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/error_handling_3-thumb.png" alt="Example 2. Activate primary action
+				('sign in') after passing basic validation."> </a>
+			<div class="figcaption">Example 2. Returning to a primary action
+				('sign in') after failing a  validation.</div>
+		</div>
+	</div>
+<p>Although the apps included in the first release of Nokia N9 won't take advantage of this pattern, third-party developers are encouraged to use it where possible using custom components. In particular, we recommend the use of inline error messages in form-based views to help users resolve problems quickly. You can do this by displaying the error message as soon as possible below the control or item that generated the problem.</p>
+<p>Keep the following guidelines in mind when you're designing your
+  application's error handling:</p>
+	<ul>
+		<li>Try to display the error message as soon as possible, e.g. as soon as the user has left a text field (see example 1).</li>
+		<li>Only activate the primary action/submit button(s) when the form has passed basic validation; e.g. if all mandatory fields are populated (see example 2).</li>
+		<li>If multiple items contribute to a problem, show a single message that summarizes the problem (see last screen in example 2).</li>
+	</ul>
+
+	<p>Other considerations with regard to 'empty mandatory fields':</p>
+	<ul>
+		<li>Before displaying an error message, try to restore the
+			previous values or try to fill the fields (e.g. name) with content
+			from another field (such as a URL in the case of a bookmark) or with
+			a predefined general name.</li>
+		<li>If a user leaves a mandatory field empty and you cannot populate it with any predefined text, highlight the field and show an inline error message after the user has left the field or tapped the primary action button.</li>
+	</ul>
+            </div>
+            
+	<div class="category committed">
+<h1>Information banner</h1>
+<p>This banner disappears
+			automatically after a time-out. Use this option if the user needs to
+			know about the problem but doesn't need to take action.</p>
+            </div>
+            
+	<div class="category committed">
+<h1>Dialogue</h1>
+<p>Use this option when it is vital that the
+			user notices the error and / or takes action to correct it.</p>
+            </div>
+
+<div class="category committed">
+	<h1>Writing error messages</h1>
+    
+	<p>Here are some tips for writing effective error messages:</p>
+	<ul>
+		<li>Avoid engineering language.</li>
+		<li>Help users understand what has happened and what they can do
+			about it.</li>
+		<li>Offer a solution instead of just stating the problem.</li>
+		<li>Do not prompt with obvious
+			texts (e.g. "Unable to save document. Try again."). Instead, offer users
+			information that will help them proceed (e.g. "Memory full. Please
+			delete some documents and try again.").</li>
+	</ul>
+</div>
+
+</div>
+<!--intro-->
+<div class="aside">
+						<h1>Downloads</h1>
+						<div>
+							<ul>
+                              <!--this is a list of the pages in the section-->
+                              
+                              
+                              <li><a href="/web/20120109161339/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_CoreUI_Toolkit_1.6.zip" target="_blank">Toolkit</a></li>
+								<li><a href="/web/20120109161339/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Guidelines.pdf" target="_blank">Icon Guidelines</a></li>
+								<li><a href="/web/20120109161339/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Templates.zip" target="_blank">Icon Templates</a></li>
+                            </ul>
+
+		</div>
+	<br>
+                    <br>
+		 				<div>                                
+                	    <ul>
+						  <li><h1>Resources</h1></li><!-- CHANGED ADDED LINKS -->
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+                            <li><a href="https://web.archive.org/web/20120109161339/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-textfield.html" target="_blank">TextField</a> </li>
+                            <li><a href="https://web.archive.org/web/20120109161339/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-label.html" target="_blank">Label</a> </li>
+                            <li><a href="https://web.archive.org/web/20120109161339/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-labelstyle.html" target="_blank">LabelStyle</a> </li>
+                            <li><a href="https://web.archive.org/web/20120109161339/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-querydialog.html" target="_blank">QueryDialog</a> </li>							
+			    </ul>
+						  </li>
+
+						</div>
+		<!-- more sections go here -->
+	</div><!--aside-->
+	</div><!--pageLeft-->
+	
+                    <div class="content-paging">
+			<a href="#" class="to-top">back to top</a>
+			<a class="next disabled" href="#">Next topic</a>
+			<span>|</span>
+			<a class="prev disabled" href="#">Prev. topic</a>
+		</div>
+    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+	<div class="footer">
+		<div class="foot-content">
+			<a href="https://web.archive.org/web/20120109161339/http://www.nokia.com/" class="nokia white"><span>Nokia</span></a>
+			<small>
+				<a href="legal.html" class="legal">&copy;2011 Nokia Corporation &#45; All rights reserved.</a>
+			</small>
+			<small class="footer-links">
+				<a href="#">Link one</a>
+				<span>|</span>
+				<a href="#">Link two</a>
+				<span>|</span>
+				<a href="#">Link three</a>
+			</small>
+		</div>
+	</div><!--footer-->
+    <script src="/web/20120109161339js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120109161339js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120109161339js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 16:13:39 Jan 09, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:05:55 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.56
+  exclusion.robots: 0.028
+  exclusion.robots.policy: 0.018
+  esindex: 0.011
+  cdx.remote: 54.837
+  LoadShardBlock: 1360.019 (3)
+  PetaboxLoader3.datanode: 1441.838 (4)
+  load_resource: 483.121
+  PetaboxLoader3.resolve: 204.142
+-->

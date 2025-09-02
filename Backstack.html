@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html class="no-js">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Backstack.html","20120110183559","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1326220559");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Backstack</title>
+    
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="./meego.css">
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25671318-1']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120110183559/https://ssl' : 'https://web.archive.org/web/20120110183559/http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a href="https://web.archive.org/web/20120110183559/http://www.nokia.com/" class="nokia dark"><span>Nokia</span></a>
+					<div class="meego-logo">
+						<a href="/web/20120110183559/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+				    </div>
+                    <ul class="main-nav"><!-- CHANGED MAIN NAV -->
+                        <li id="nav01"><a href="getting_started.html">Getting <span>Started</span></a></li>
+                        <li id="nav02"><a href="core_ui_framework.html">Core UI <span>Framework</span></a></li>
+                        <li id="nav03"><a href="pattern_library.html">Pattern <span>Library</span></a></li>
+                        <li id="nav04"><a href="component_library.html">Component <span>Library</span></a></li>
+                        <li id="nav05"><a href="develop_your_app.html">Develop <span>Your App</span></a></li>
+                    </ul>
+	</div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+						  <li><a href="#">Patterns</a></li>
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+							  <li><a href="Navigation_Structures.html">Navigation Structures</a></li>
+							  <li><a href="Backstack.html">Backstack</a></li>
+							  <li><a href="Deleting.html">Deleting</a></li>
+							  <li><a href="Empty_States.html">Empty States</a></li>
+							  <li><a href="Error_Handling.html">Error Handling</a></li>
+                              <li><a href="Fast_scroll.html">Fast Scroll</a></li>
+							  <li><a href="Full_Screen.html">Full Screen</a></li>
+							  <li><a href="Launch_Image.html">Launch Image</a></li>
+							  <li><a href="Multiple_selection.html">Multiple Selection</a></li>
+							  <li><a href="Portrait_vs_Landscape.html">Portrait &amp; Landscape</a></li>
+							  <li><a href="Saving_confirmation.html">Saving &amp; Confirmation</a></li>
+							  <li><a href="Search_and_Filter.html">Search &amp; Filter</a></li>
+							  <li><a href="Sheets.html">Sheets</a></li>
+							  <li><a href="Text_Input.html">Text Input</a></li>
+</ul>
+						  </li>
+						  
+						</ul>
+                    </div>
+                    <div id="main-content">
+						<div class="pageLeft">
+							<h1 class="page-title">Backstack</h1>
+							<div class="intro">
+                            	<div class="thumbnails">
+									<div class="figure">
+										<a href="#"> <img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Essentials/backstacking_behavior-thumb.jpg" alt="Backstack flow"> </a>
+                                            			<div class="figcaption">Backstack flow</div>
+
+
+								  </div>
+								</div>
+								
+								<h2>Top-level views don't have Back, subsequent pages do</h2>
+									<p>An application's Home screen (i.e. the screen users see when they launch that application for the first time) does not provide a Back button, while subsequent pages do. An exception applies to applications using a Tab Bar + Back Navigation model. In this case, the Back button is visible but disabled at the top level.</p>
+<h2>Returning to top page clears History</h2>	
+                                  <p>Whenever the user returns to a top-level page, the Back button is always reset and disabled. </p>
+								
+                          <h2>Back always returns to previous view</h2>	
+                              <p>Without exception, the Back button should always take the user back to the screen she was just viewing. It should not take her to some other screen in the hierarchy. For example, if the user links from a top-level Music page to the Detail View for a specific album, then hits the Back button, she should go back to the top-level Music page, NOT to the category page to which that album belongs.</p>
+                              <p>In this way, the Backstacking model is historical (i.e. taking users back in their history) and not hierarchical (i.e. taking users up to a predefined level in the application hierarchy regardless of whether or not they arrived from that view in the hierarchy).</p>
+									
+																					
+							</div>
+					<!--intro-->
+						</div><!--pageLeft-->
+						<div class="aside">
+						<h1>Downloads</h1>
+						<div>
+							<ul>
+                              <!--this is a list of the pages in the section-->
+                              
+                              
+                              <li><a href="/web/20120110183559/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_CoreUI_Toolkit_1.6.zip" target="_blank">Toolkit</a></li>
+								<li><a href="/web/20120110183559/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Guidelines.pdf" target="_blank">Icon Guidelines</a></li>
+								<li><a href="/web/20120110183559/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Templates.zip" target="_blank">Icon Templates</a></li>
+                            </ul>
+					
+							</div>
+	<br>
+<br>
+                    <div>                                                 
+                    <ul>
+						  <li><h1>Resources</h1></li><!-- CHANGED FIXED LINKS -->
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+                            <li><a href="https://web.archive.org/web/20120110183559/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-pagestack.html" target="_blank">PageStack</a> </li>
+                            <li><a href="https://web.archive.org/web/20120110183559/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-pagestackwindow.html" target="_blank">PageStackWindow</a> </li>
+                            <li><a href="https://web.archive.org/web/20120110183559/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-pagestackwindowstyle.html" target="_blank">PageStackWindowStyle</a> </li>
+							</ul>
+						  </li>
+
+</div>
+						</div><!--aside-->
+                    <div class="content-paging">
+			<a href="#" class="to-top">back to top</a>
+			<a class="next disabled" href="#">Next topic</a>
+			<span>|</span>
+			<a class="prev disabled" href="#">Prev. topic</a>
+		</div>
+    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+    </div><!--wrap-->
+	<div class="footer">
+		<div class="foot-content">
+			<a href="https://web.archive.org/web/20120110183559/http://www.nokia.com/" class="nokia white"><span>Nokia</span></a>
+			<small>
+				<a href="legal.html" class="legal">&copy;2011 Nokia Corporation &#45; All rights reserved.</a>
+			</small>
+			<small class="footer-links">
+				<a href="#">Link one</a>
+				<span>|</span>
+				<a href="#">Link two</a>
+				<span>|</span>
+				<a href="#">Link three</a>
+			</small>
+		</div>
+	</div><!--footer-->
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 18:35:59 Jan 10, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:05:41 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.716
+  exclusion.robots: 0.036
+  exclusion.robots.policy: 0.022
+  esindex: 0.013
+  cdx.remote: 189.531
+  LoadShardBlock: 897.373 (3)
+  PetaboxLoader3.datanode: 387.279 (4)
+  PetaboxLoader3.resolve: 545.637 (3)
+  load_resource: 226.511
+-->

@@ -1,0 +1,300 @@
+<!doctype html>
+
+<html class="no-js">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Text_Input.html","20120205112154","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1328440914");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=p7PEIJWi" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Text Input</title>
+    
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="./meego.css">
+    <script src="/web/20120205112154js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25671318-1']);
+   _gaq.push(['_trackPageview']);
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120205112154/https://ssl' : 'https://web.archive.org/web/20120205112154/http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+</script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a href="https://web.archive.org/web/20120205112154/http://www.nokia.com/" class="nokia dark"><span>Nokia</span></a>
+					<div class="meego-logo">
+						<a href="/web/20120205112154/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+				    </div>
+                    <ul class="main-nav"><!-- CHANGED MAIN NAV -->
+                        <li id="nav01"><a href="getting_started.html">Getting <span>Started</span></a></li>
+                        <li id="nav02"><a href="core_ui_framework.html">Core UI <span>Framework</span></a></li>
+                        <li id="nav03"><a href="pattern_library.html">Pattern <span>Library</span></a></li>
+                        <li id="nav04"><a href="component_library.html">Component <span>Library</span></a></li>
+                        <li id="nav05"><a href="develop_your_app.html">Develop <span>Your App</span></a></li>
+                    </ul>
+	</div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+						  <li><a href="#">Patterns</a></li>
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+							  <li><a href="Navigation_Structures.html">Navigation Structures</a></li>
+							  <li><a href="Backstack.html">Backstack</a></li>
+							  <li><a href="Deleting.html">Deleting</a></li>
+							  <li><a href="Empty_States.html">Empty States</a></li>
+							  <li><a href="Error_Handling.html">Error Handling</a></li>
+                              <li><a href="Fast_scroll.html">Fast Scroll</a></li>
+							  <li><a href="Full_Screen.html">Full Screen</a></li>
+							  <li><a href="Launch_Image.html">Launch Image</a></li>
+							  <li><a href="Multiple_selection.html">Multiple Selection</a></li>
+							  <li><a href="Portrait_vs_Landscape.html">Portrait &amp; Landscape</a></li>
+							  <li><a href="Saving_confirmation.html">Saving &amp; Confirmation</a></li>
+							  <li><a href="Search_and_Filter.html">Search &amp; Filter</a></li>
+							  <li><a href="Sheets.html">Sheets</a></li>
+							  <li><a href="Text_Input.html">Text Input</a></li>
+</ul>
+						  </li>
+						  
+						</ul>
+                    </div>
+                    <div id="main-content">
+						<div class="pageLeft">
+<h1 class="page-title">Text Input</h1>
+	<div class="intro">
+		
+    <div class="thumbnails">
+
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_input_1-thumb.png" alt="Virtual Keyboard"> </a>
+			<div class="figcaption">Virtual Keyboard</div>
+		</div>
+        
+		</div>
+    
+	</div>
+<div class="category committed">
+    <h1>Virtual Keyboard</h1>
+        <div class="thumbnails">
+                
+        <div class="figure">
+            <a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_uppercase_comm-thumb.png" alt="Uppercase"> </a>
+            <div class="figcaption">Uppercase</div>
+        </div>
+                
+        <div class="figure">
+            <a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_lowercase_comm-thumb.png" alt="Lowercase"> </a>
+            <div class="figcaption">Lowercase</div>
+        </div>
+                
+        <div class="figure">
+            <a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_pressed_comm-thumb.png" alt="Pressed state"> </a>
+            <div class="figcaption">Pressed state</div>
+        </div>
+
+	</div>
+	<p>The virtual keyboard displays in uppercase by default. Tapping the shift button returns to a lowercase state. Each letter, number, or symbol magnifies upon tap.</p>
+
+</div>
+<div class="category committed">
+    <h1>Virtual Numpad</h1>
+
+	<div class="thumbnails">
+			
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_numbers_comm-thumb.png" alt="Numbers"> </a>
+		<div class="figcaption">Numeric</div>
+		</div>
+            
+	</div>
+	<p>The numpad is  triggered automatically when activating a numeric form field. Tapping the '+ * #' button from the numpad cycles through the available symbols.</p>
+    
+</div>
+
+
+<div class="category committed">
+	<h1>Basic Behaviors</h1>
+        
+    <h2>Opening</h2>
+        <p>The virtual keyboard is invoked automatically when the user taps an input field. Available in portrait and landscape modes, the keyboard opens according to the orientation from which it has been called. If the user rotates the device, the layout is smoothly changed
+according to the new orientation. Whenever the hardware keyboard is opened, the virtual keyboard must not load.</p>
+    
+    <h2>Closing</h2>
+        <p>The user can close the virtual keyboard by either tapping outside the text field or tapping the "Done" button. Note that the virtual keyboard does not act as a drawer in the sense that the user cannot pull it up; it will come up once the user actions the text field again.</p>
+    
+	<h2>Selecting text</h2>
+	<div class="thumbnails">
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_select-thumb.png" alt="Selecting test"> </a>
+			<div class="figcaption">Drag to select text</div>
+		</div>
+    </div>        
+
+	<h2>Magnifier</h2>
+	<div class="thumbnails">
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_magnifier-thumb.png" alt="Magnifier"> </a>
+			<div class="figcaption">Long press to get the text magnifier</div>
+		</div>
+    </div>
+
+</div>
+<div class="category committed">
+	<h1>Advanced Behaviors</h1>
+
+	<h2>Copy &amp; Paste</h2>
+	<div class="thumbnails">
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_copypaste-thumb.png" alt="Copy &amp; paste"> </a>
+			<div class="figcaption">Copy and paste options appear automatically when text is selected</div>
+		</div>
+    </div>
+
+	<h2>Rich text editing</h2>
+	<div class="thumbnails">
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_format-thumb.png" alt="Rich text editing"> </a>
+			<div class="figcaption">Rich text editing</div>
+		</div>
+	</div>
+	
+    <h2>Text correction</h2>
+	<div class="thumbnails">
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_correct-thumb.png" alt="Word suggestions while typing"> </a>
+			<div class="figcaption">Word suggestions while typing</div>
+        </div>
+        <div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_misspelled-thumb.png" alt="Misspelled word highlighted"> </a>
+			<div class="figcaption">Misspelled word highlighted</div>
+		</div>
+    </div>
+
+		<p>Nokia N9 helps correct misspelled words in two ways:</p>
+        <ul>
+        	<li>By suggesting words while typing. The user can tap on the suggested word to accept it.</li>
+            <li>By highlighting misspelled words. If the user taps on the word, one or more alternative spellings will be shown.</li>
+        </ul>
+
+
+	<h2>Keyboard languages</h2>
+	<div class="thumbnails">
+		<div class="figure">
+			<a href="#"> <img src="/web/20120205112154im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_language-thumb.png" alt="Changing keyboard language"> </a>
+			<div class="figcaption">Caption displayed after changing keyboard language</div>
+		</div>
+    </div>
+
+		<p>When multiple keyboards are enabled in settings, users can pan left and right in the keyboard area to switch keyboards. The caption is shown for one second after making a switch.</p>
+
+</div>
+
+						</div><!--pageLeft-->
+						<div class="aside">
+						<h1>Downloads</h1>
+						<div>
+							<ul>
+                              <!--this is a list of the pages in the section-->
+                              
+                              
+                              <li><a href="/web/20120205112154/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_CoreUI_Toolkit_1.6.zip" target="_blank">Toolkit</a></li>
+								<li><a href="/web/20120205112154/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Guidelines.pdf" target="_blank">Icon Guidelines</a></li>
+								<li><a href="/web/20120205112154/http://harmattan-dev.nokia.com/docs/ux/downloads/NokiaN9_Icon_Templates.zip" target="_blank">Icon Templates</a></li>
+                            </ul>
+					
+							</div>
+<br>
+<br>
+
+                    <div>                                                 
+                    <ul>
+						  <li><h1>Resources</h1></li><!-- CHANGED FIXED LINKS -->
+						  <!--this is a section title-->
+						  <li>
+							<ul> <!--this is a list of the pages in the section-->
+                            <li><a href="https://web.archive.org/web/20120205112154/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-textarea.html" target="_blank">TextArea</a> </li>
+                            <li><a href="https://web.archive.org/web/20120205112154/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-textfield.html" target="_blank">TextField</a> </li>
+                            <li><a href="https://web.archive.org/web/20120205112154/http://harmattan-dev.nokia.com/docs/library/html/qt-components/qt-components-meego-sipattributes.html" target="_blank">SipAttributes</a> </li>
+							</ul>
+						  </li>
+
+</div>
+						</div><!--aside-->
+                    <div class="content-paging">
+			<a href="#" class="to-top">back to top</a>
+			<a class="next disabled" href="#">Next topic</a>
+			<span>|</span>
+			<a class="prev" href="#">Prev. topic</a>
+		</div>
+    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+    </div><!--wrap-->
+	<div class="footer">
+		<div class="foot-content">
+			<a href="https://web.archive.org/web/20120205112154/http://www.nokia.com/" class="nokia white"><span>Nokia</span></a>
+			<small>
+				<a href="legal.html" class="legal">&copy;2011 Nokia Corporation &#45; All rights reserved.</a>
+			</small>
+			<small class="footer-links">
+				<a href="#">Link one</a>
+				<span>|</span>
+				<a href="#">Link two</a>
+				<span>|</span>
+				<a href="#">Link three</a>
+			</small>
+		</div>
+	</div><!--footer-->
+    <script src="/web/20120205112154js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120205112154js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120205112154js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html><!--
+     FILE ARCHIVED ON 11:21:54 Feb 05, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:06:20 Sep 02, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.889
+  exclusion.robots: 0.053
+  exclusion.robots.policy: 0.033
+  esindex: 0.014
+  cdx.remote: 136.123
+  LoadShardBlock: 313.617 (3)
+  PetaboxLoader3.datanode: 552.282 (4)
+  load_resource: 525.564
+  PetaboxLoader3.resolve: 161.226
+-->
