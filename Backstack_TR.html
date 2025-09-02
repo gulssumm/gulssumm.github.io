@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="tr">
+<head>
+    <script charset="utf-8" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" type="text/javascript"></script>
+    <script charset="utf-8" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" type="text/javascript"></script>
+    <script>
+        window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
+    </script>
+    <script src="https://web-static.archive.org/_static/js/ruffle/ruffle.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        __wm.init("https://web.archive.org/web");
+        __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Backstack.html","20120110183559","https://web.archive.org/","web","https://web-static.archive.org/_static/","1326220559");
+    </script>
+    <link href="banner-styles.css" rel="stylesheet" type="text/css"/>
+    <link href="iconochive.css" rel="stylesheet" type="text/css"/>
+    <!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gezinme Geçmişi</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="meego.css">
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25671318-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120110183559/https://ssl' : 'https://web.archive.org/web/20120110183559/http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a href="https://web.archive.org/web/20120110183559/http://www.nokia.com/" class="nokia dark"><span>Nokia</span></a>
+                    <div class="meego-logo">
+                        <a href="/web/20120110183559/http://harmattan-dev.nokia.com/docs/ux/index.html"></a>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+                            <li><a href="#">Düzenler</a></li>
+                            <!--this is a section title-->
+                            <li>
+                                <ul> <!--this is a list of the pages in the section-->
+                                    <li><a href="Navigation_Structures.html">Navigasyon Yapıları</a></li>
+                                    <li><a href="Backstack.html">Gezinme Geçmişi</a></li>
+                                    <li><a href="Deleting.html">Silme İşlemi</a></li>
+                                    <li><a href="Empty_States.html">Boş Durum Ekranları</a></li>
+                                    <li><a href="Error_Handling.html">Hata Yönetimi</a></li>
+                                    <li><a href="Fast_scroll.html">Hızlı Kaydırma</a></li>
+                                    <li><a href="Full_Screen.html">Tam Ekran</a></li>
+                                    <li><a href="Launch_Image.html">Başlangıç Görseli</a></li>
+                                    <li><a href="Multiple_selection.html">Çoklu Seçim</a></li>
+                                    <li><a href="Portrait_vs_Landscape.html">Dikey ve Yatay Mod</a></li>
+                                    <li><a href="Saving_confirmation.html">Kaydetme ve Onaylama</a></li>
+                                    <li><a href="Search_and_Filter.html">Arama ve Filtreleme</a></li>
+                                    <li><a href="Sheets.html">Alt Sayfalar</a></li>
+                                    <li><a href="Text_Input.html">Metin Giriş Alanı</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="main-content">
+                        <div class="pageLeft">
+                            <h1 class="page-title">Gezinme Geçmişi</h1>
+                            <div class="intro">
+                                <div class="thumbnails">
+                                    <div class="figure">
+                                        <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Essentials/backstacking_behavior-thumb.jpg" alt="Backstack flow"></a>
+                                        <div class="figcaption">Gezinme geçmişi akışı</div>
+                                    </div>
+                                </div>
+                                
+                                <h2>Üst düzey görünümlerde Geri butonu yoktur, sonraki sayfalarda vardır</h2>
+                                <p>Bir uygulamanın Ana ekranı (yani kullanıcıların o uygulamayı ilk kez başlattığında gördükleri ekran) Geri butonu sağlamaz, sonraki sayfalar sağlar. Sekme Çubuğu + Geri Navigasyon modelini kullanan uygulamalar için bir istisna geçerlidir. Bu durumda, Geri butonu görünür ancak üst düzeyde devre dışıdır.</p>
+
+                                <h2>Üst sayfaya dönmek Geçmişi temizler</h2>	
+                                <p>Kullanıcı bir üst düzey sayfaya döndüğünde, Geri butonu her zaman sıfırlanır ve devre dışı kalır.</p>
+                                
+                                <h2>Geri her zaman önceki görünüme döner</h2>	
+                                <p>İstisnasız olarak, Geri butonu kullanıcıyı her zaman az önce görüntülediği ekrana götürmelidir. Onu hiyerarşideki başka bir ekrana götürmemelidir. Örneğin, kullanıcı üst düzey Müzik sayfasından belirli bir albümün Detay Görünümüne bağlantı verirse, ardından Geri butonuna basarsa, o albümün ait olduğu kategori sayfasına DEĞİL, üst düzey Müzik sayfasına geri dönmelidir.</p>
+                                <p>Bu şekilde, Gezinme Geçmişi modeli tarihseldir (yani kullanıcıları geçmişlerinde geri götürür) ve hiyerarşik değildir (yani kullanıcıları hiyerarşideki o görünümden gelip gelmediklerine bakılmaksızın uygulama hiyerarşisinde önceden tanımlanmış bir düzeye götürür).</p>
+                            </div>
+                            <!--intro-->
+                        </div><!--pageLeft-->
+                        
+                        <div class="content-paging">
+                            <a href="#" class="to-top">başa dön</a>
+                            <a class="next disabled" href="#">Sonraki konu</a>
+                            <span>|</span>
+                            <a class="prev disabled" href="#">Önceki konu</a>
+                        </div>
+                    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+    </div><!--wrap-->
+    
+    <div class="footer">
+        <div class="foot-content">
+            <a class="nokia white">
+                <span>Nokia</span>
+            </a>
+            <small>
+                <a class="legal">©2011 Nokia Corporation - Tüm hakları saklıdır.</a>
+            </small>
+        </div>
+    </div><!--footer-->
+    
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html>
