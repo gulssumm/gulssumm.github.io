@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="tr">
+<head>
+    <script charset="utf-8" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" type="text/javascript"></script>
+    <script charset="utf-8" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" type="text/javascript"></script>
+    <script>
+        window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
+    </script>
+    <script src="https://web-static.archive.org/_static/js/ruffle/ruffle.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        __wm.init("https://web.archive.org/web");
+        __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Search_and_Filter_TR.html","20120110183559","https://web.archive.org/","web","https://web-static.archive.org/_static/","1326220559");
+    </script>
+    <link href="banner-styles.css" rel="stylesheet" type="text/css"/>
+    <link href="iconochive.css" rel="stylesheet" type="text/css"/>
+    <!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arama ve Filtreleme</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="meego.css">
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
+    <!--[if IE]><![endif]-->
+    <!--[if IE 8]>
+        <link rel="stylesheet" href="../css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="../css/ie7.css">
+    <![endif]-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25671318-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120110183559/https://ssl' : 'https://web.archive.org/web/20120110183559/http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="bg-top">
+            <div class="bg-bot">
+                <div class="header">
+                    <a>UX REHBERİ</a>
+                </div>
+                <div class="content clearfix">
+                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                        <ul class="pattern">
+                            <li><a href="#">Düzenler</a></li>
+                            <!--this is a section title-->
+                            <li>
+                                <ul> <!--this is a list of the pages in the section-->
+                                    <li><a href="Navigation_Structures_TR.html">Navigasyon Yapıları</a></li>
+                                    <li><a href="Backstack_TR.html">Gezinme Geçmişi</a></li>
+                                    <li><a href="Deleting_TR.html">Silme İşlemi</a></li>
+                                    <li><a href="Empty_States_TR.html">Boş Durum Ekranları</a></li>
+                                    <li><a href="Error_Handling_TR.html">Hata Yönetimi</a></li>
+                                    <li><a href="Fast_scroll_TR.html">Hızlı Kaydırma</a></li>
+                                    <li><a href="Full_Screen_TR.html">Tam Ekran</a></li>
+                                    <li><a href="Launch_Image_TR.html">Başlangıç Görseli</a></li>
+                                    <li><a href="Multiple_selection_TR.html">Çoklu Seçim</a></li>
+                                    <li><a href="Portrait_vs_Landscape_TR.html">Dikey ve Yatay Mod</a></li>
+                                    <li><a href="Saving_confirmation_TR.html">Kaydetme ve Onaylama</a></li>
+                                    <li><a href="Search_and_Filter_TR.html">Arama ve Filtreleme</a></li>
+                                    <li><a href="Sheets_TR.html">Alt Sayfalar</a></li>
+                                    <li><a href="Text_Input_TR.html">Metin Giriş Alanı</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="main-content">
+                        <div class="pageLeft">
+                            <h1 class="page-title">Arama ve Filtreleme</h1>
+                            <div class="intro">
+                                <p>Bir uygulama, Arama sonuçlarında hangi içerik türlerinin gösterileceğini tanımlayabilir. Örneğin, Mesajlaşma Araması yalnızca SMS, MMS veya IM içerik öğeleri olan sonuçlar bulur. Bir uygulama gerektiğinde internet sonuçlarını da etkinleştirebilir.</p>
+                                <p>Uygulamanızın doğası ve yapısı, kullanıcılarınızın Arama'ya erişmesi için en uygun yolu belirleyecektir. Aşağıdaki ana arama desenlerini kullanmanızı öneririz.</p>
+                                
+                                <div class="category committed">
+                                    <h1>Hızlı filtre</h1>
+                                    <div class="thumbnails">
+                                        <div class="figure">
+                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/search_1B-thumb.png" alt="Hızlı filtre"></a>
+                                            <div class="figcaption">Hızlı filtre</div>
+                                        </div>
+                                    </div>
+
+                                    <p>Bu desen, kullanıcılara uzun bir listeyi mümkün olduğunca hızlı filtreleme olanağı vermek istediğinizde etkilidir. Bu desen içinde, arama çubuğu üste sabitlenmez, liste ile birlikte kayar. Uygulama geliştiricileri, filtrelemenin görev için ne kadar önemli olduğuna bağlı olarak filtre alanını varsayılan olarak göstermeyi veya çekme hareketi ile ortaya çıkarmayı seçebilir.</p>
+                                </div>
+                                
+                                <div class="category committed">
+                                    <h1>Arama sekmesi</h1>
+                                    <div class="thumbnails">
+                                        <div class="figure">
+                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/search_1A-thumb.png" alt="Arama Sekmesi"></a>
+                                            <div class="figcaption">Arama Sekmesi</div>
+                                        </div>
+                                    </div>
+
+                                    <p>Uygulamanız içinde daha gelişmiş bir arama ortamı için arama sekmesi kullanın. Hızlı filtreden farklı olarak, arama sekmesi sadece zaten görünür olan bir listeyi filtrelemez. Çevrimiçi aramalar dahil birden çok yerden sonuçlar döndürebilir.</p>
+                                </div>
+                            </div>
+                            <!--intro-->
+                        </div><!--pageLeft-->
+                        
+                        <div class="content-paging">
+                            <a href="#" class="to-top">başa dön</a>
+                            <a class="next disabled" href="#">Sonraki konu</a>
+                            <span>|</span>
+                            <a class="prev disabled" href="#">Önceki konu</a>
+                        </div>
+                    </div><!--main-content-->
+                </div><!--content-->
+            </div><!--bg-top-->
+        </div><!--bg-bot-->
+    </div><!--wrap-->
+    
+    <div class="footer">
+        <div class="foot-content">
+            <a class="nokia white">
+                <span>Nokia</span>
+            </a>
+            <small>
+                <a class="legal">©2011 Nokia Corporation - Tüm hakları saklıdır.</a>
+            </small>
+        </div>
+    </div><!--footer-->
+    
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
+    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
+</body>
+</html>
