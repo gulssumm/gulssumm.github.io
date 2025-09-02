@@ -4,34 +4,30 @@
     <script charset="utf-8" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" type="text/javascript"></script>
     <script charset="utf-8" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" type="text/javascript"></script>
     <script>
-        window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
+        window.RufflePlayer=window.RufflePlayer||{};
+        window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};
     </script>
     <script src="https://web-static.archive.org/_static/js/ruffle/ruffle.js" type="text/javascript"></script>
     <script type="text/javascript">
         __wm.init("https://web.archive.org/web");
         __wm.wombat("http://harmattan-dev.nokia.com:80/docs/ux/pages/Sheets_TR.html","20120110183559","https://web.archive.org/","web","https://web-static.archive.org/_static/","1326220559");
     </script>
-    <link href="banner-styles.css" rel="stylesheet" type="text/css"/>
-    <link href="iconochive.css" rel="stylesheet" type="text/css"/>
-    <!-- End Wayback Rewrite JS Include -->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Alt Sayfalar</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="meego.css">
     <style>
-    .header a {
-    display: block;          
-    text-align: center;      
-    font-weight: bold;       
-    font-size: 32px;         
-    margin: 20px 0;          
-    }
-</style>
+        .header a {
+            display: block;          
+            text-align: center;      
+            font-weight: bold;       
+            font-size: 32px;         
+            margin: 20px 0;          
+        }
+    </style>
 
     <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/modernizr-1.7.min.js"></script>
-    <!--[if IE]><![endif]-->
     <!--[if IE 8]>
         <link rel="stylesheet" href="../css/ie8.css">
     <![endif]-->
@@ -56,15 +52,14 @@
         <div class="bg-top">
             <div class="bg-bot">
                 <div class="header">
-                    <a>UX REHBERİ</a>
+                    <a>UX REHBERI</a>
                 </div>
                 <div class="content clearfix">
-                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                    <div class="left-nav">
                         <ul class="pattern">
                             <li><a href="#">Düzenler</a></li>
-                            <!--this is a section title-->
                             <li>
-                                <ul> <!--this is a list of the pages in the section-->
+                                <ul>
                                     <li><a href="Navigation_Structures_TR.html">Navigasyon Yapıları</a></li>
                                     <li><a href="Backstack_TR.html">Gezinme Geçmişi</a></li>
                                     <li><a href="Deleting_TR.html">Silme İşlemi</a></li>
@@ -83,6 +78,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div id="main-content">
                         <div class="pageLeft">
                             <h1 class="page-title">Alt Sayfalar</h1>
@@ -91,6 +87,10 @@
                                     <div class="figure">
                                         <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets_overview-thumb.png" alt="Alt sayfalara erişim"></a>
                                         <div class="figcaption">Alt sayfalara erişim</div>
+                                    </div>
+                                    <div class="figure">
+                                        <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-guidelines_A-thumb.png" alt="Ağ bağlantısı alt sayfası"></a>
+                                        <div class="figcaption">Ağ bağlantısı alt sayfası</div>
                                     </div>
                                 </div>
 
@@ -117,44 +117,14 @@
 
                                 <div class="category committed">
                                     <h1>Kılavuzlar ve Akış</h1>
+                                    <h2>Alt Sayfalar için Kılavuzlar</h2>
+                                    <p>Alt sayfa her zaman alttan yukarı doğru kayar. Uygulamanın ihtiyaçlarına bağlı olarak, durum çubuğunu kapayabilir veya kapamayabilir. Kullanıcı alt sayfayı kapattıktan sonra, tekrar aşağı doğru kayar. Alt sayfanın altında asla araç çubuğu olmaz.</p>
                                     
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-composers-1-thumb.jpg" alt="E-posta oluşturucusu"></a>
-                                            <div class="figcaption">E-posta oluşturucusu</div>
-                                        </div>
-
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-composers-2-thumb.jpg" alt="Etkinlik oluşturucusu"></a>
-                                            <div class="figcaption">Etkinlik oluşturucusu</div>
-                                        </div>
-                                    </div>
-
-                                    <h2>Alt Sayfa Olarak Oluşturucular</h2>
-                                    <p>Oluşturucu tipik olarak alt sayfa olarak uygulanır, örneğin e-posta, SMS mesajı veya takvim etkinliği oluşturmak için. Uygulamanız da bir oluşturucu içeriyorsa, aşağıdaki kılavuzları göz önünde bulundurun:</p>
-                                    
-                                    <ul>
-                                        <li>Mümkün olduğunda varsayılan seçicileri kullanmanın yanı sıra, varsayılan kişi veya içerik seçicilerini de kullanın. Bu, kullanıcıların örneğin bir e-postanın alıcılarını seçmesine veya bir takvim etkinliğine eklemek için dosyalar belirtmesine olanak tanır. Bu gibi durumlarda, ikinci bir alt sayfa oluşturulabilir.</li>
-                                        <li>Zorunlu olmayan veya tipik olarak değiştirilmesi gerekmeyen bazı giriş alanlarını gizlemeyi düşünün (örneğin 2. örnekte 'Tekrarla' ve 'Hatırlatma').</li>
-                                        <li>Birincil eylem butonunu - tipik olarak alt sayfanın sağ üstünde (örneğin Gönder) - yalnızca gerekli bilgi girildiğinde etkinleştirin.</li>
-                                    </ul>
-                                    
-                                    <h2>Geçişler üzerine not</h2>
-                                    <p>Alt sayfayı kapatmanın varsayılan geçişi 'aşağı kayma'dır. Ancak, oluşturucu kullanarak yeni bir nesne oluştururken, yeni nesneyi tutan kapsayıcıya 'sağa kayma' geçişi kullanmayı düşünün (örneğin yeni takvim etkinliğini görüntüleyen takvimin gün görünümünü göster).</p>
-
-                                    <h2>Alt Sayfalar için Dil</h2>
-                                    <p>Aktif butonlar, kullanıcının zaten bir listeye eklediği ayrıntıları (örneğin ad, şifre, tarih) onaylar veya iptal eder. Bu nedenle, açık ve özlü olmaları gerekir - bu yüzden mümkün olduğunca sadece bir kelime kullanın. Genellikle iki zıt seçenek vardır: 'Kaydet-İptal', 'Ekle-İptal', 'Bağlan-İptal'. Mümkün olduğunca, alakalı tek kelimelik eylem adı kullanın.</p>
-                                    
-                                    <h2><span class="color">Kullanın: <i>Paylaş</i><br>Kullanın: <i>Ekle</i><br>Kullanın: <i>Bağlan</i></span><br>Alternatif: <i>İptal</i></h2>
-
-                                    <p>Kullanıcı yeni bilgi girdiyse (örneğin yeni kişi oluşturma veya fotoğraf düzenleme), buton metni 'Kaydet' olmalıdır. Ancak, kullanıcının telefonu bir indirme veya eşzamanlama tamamladıysa, buton metni 'Tamam' olmalıdır. Kullanıcı süreci durdurmak isterse, 'İptal'e dokunabilir. Asla 'Tamam-Kaydet' kombinasyonunu birlikte kullanmayın. Butonlar bazen tek başına da görünebilir. Örneğin:</p>
-                                    
-                                    <h2><span class="color">Kullanın: <i>Git</i><br>Kullanın: <i>Tamam</i><br>Kullanın: <i>İptal</i></span><br>Asla Kullanmayın: <i>Tamam-Kaydet</i></h2>
+                                    <p>Alt sayfa her zaman üstte en az bir buton tutan bir buton çubuğu görüntüler. Butonlar simgeler değil metin dizileri kullanır ve alt sayfadan çıkmak için her zaman açık ve güvenli bir yol sağlamalıdır. Çoğu durumda, buton çubuğunda negatif ve pozitif eylem bulunur. Genel olarak, negatif eylem için 'İptal' kullanılır, pozitif eylem için ise gerçek fiil kullanılır (örneğin 'İleri', 'Gönder' veya 'Bağlan'). Alt sayfa ile önceki durum veya ekran arasında hiyerarşik ilişki çağrışımını iletmekten kaçınmak için 'Geri' kullanımı önerilmez.</p>
                                 </div>
                             </div>
-                            <!--intro-->
-                        </div><!--pageLeft-->
-                        
+                        </div>
+
                         <div class="content-paging">
                             <a href="#" class="to-top">başa dön</a>
                             <a class="next disabled" href="#">Sonraki konu</a>
@@ -166,7 +136,7 @@
             </div><!--bg-top-->
         </div><!--bg-bot-->
     </div><!--wrap-->
-    
+
     <div class="footer">
         <div class="foot-content">
             <a class="nokia white">
@@ -177,34 +147,8 @@
             </small>
         </div>
     </div><!--footer-->
-    
+
     <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/jquery.js"></script>
     <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/meego.js"></script>
-    <script src="/web/20120110183559js_/http://harmattan-dev.nokia.com/docs/ux/js/swfobject.js"></script>
 </body>
-</html>dev.nokia.com/docs/ux/images/building_blocks/Patterns/sheets-guidelines_A-thumb.png" alt="Ağ bağlantısı alt sayfası"></a>
-                                            <div class="figcaption">Ağ bağlantısı alt sayfası</div>
-                                        </div>
-                                    </div>
-
-                                    <h2>Alt Sayfalar için Kılavuzlar</h2>
-                                    <p>Alt sayfa her zaman alttan yukarı doğru kayar. Uygulamanın ihtiyaçlarına bağlı olarak, durum çubuğunu kapayabilir veya kapamayabilir. Kullanıcı alt sayfayı kapattıktan sonra, tekrar aşağı doğru kayar. Alt sayfanın altında asla araç çubuğu olmaz.</p>
-                                    
-                                    <p>Alt sayfa her zaman üstte en az bir buton tutan bir buton çubuğu görüntüler. Butonlar simgeler değil metin dizileri kullanır ve alt sayfadan çıkmak için her zaman açık ve güvenli bir yol sağlamalıdır. Çoğu durumda, buton çubuğunda negatif ve pozitif eylem bulunur. Genel olarak, negatif eylem için 'İptal' kullanılır, pozitif eylem için ise gerçek fiil kullanılır (örneğin 'İleri', 'Gönder' veya 'Bağlan'). Alt sayfa ile önceki durum veya ekran arasında hiyerarşik ilişki çağrışımını iletmekten kaçınmak için 'Geri' kullanımı önerilmez.</p>
-                                    
-                                    <p>Mümkün olduğunda, alt sayfa kombo kutusu diyalogları ve anahtarlar gibi basit kontrollerin varsayılan davranışına güvenmeye devam etmelidir.</p>
-
-                                    <h2>Alt sayfanın akmasına izin verin</h2>
-                                    <p>Bazı örneklerde (örneğin yeni kişi ekleme), alt sayfanın odağı ilk metin alanına ayarlaması ve klavyeyi otomatik olarak açması faydalı olabilir. Ancak, kullanıcı mevcut bir kişiyi düzenliyorsa, hangi alanı düzenlemek isteyeceğini bilmenin yolu yoktur, bu nedenle odak otomatik olarak ayarlanmamalıdır. Bu işlevi kullanmadan önce kullanım bağlamını dikkatli bir şekilde değerlendirmenizi öneririz.</p>
-                                    
-                                    <p>Ekranın görsel hiyerarşisinin kullanıcıyı kontrollerin doğal bir sırası boyunca yönlendirdiğinden her zaman emin olun. Klavyenin sağ alt köşesindeki mavi tuş 'İleri' yazar. Bir dizinin sonunda, onaylayıcı etiket (örneğin 'Kaydet' veya 'Tamam') klavyeyi kapatır.</p>
-                                    
-                                    <p>Alt sayfa asla birden fazla ek alt sayfa oluşturmaz. İkinci alt sayfa gerektiren tasarımlar yeniden düşünülmeli ve üçüncü gerektiren tasarımlar tamamen yeniden tasarlanmalıdır. Ancak, çok özel durumlarda, alt sayfa bir sorgu diyalogu oluşturabilir (örneğin alt sayfayı kapatmak "Taslak olarak kaydet? veya Kaydet / At" diyalogu oluşturabilir).</p>
-                                </div>
-
-                                <div class="category committed">
-                                    <h1>Oluşturucular</h1>
-
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-
+</html>
