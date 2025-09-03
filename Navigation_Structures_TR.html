@@ -16,14 +16,32 @@
             margin: 20px 0;
         }
 
-        .left-nav ul.pattern ul {
-            display: block !important;
-            /* Alt menüyü her zaman göster */
+        .left-nav {
+            float: left;
+            width: 220px;
+            /* or whatever width fits your layout */
         }
 
-        .left-nav ul.pattern li a {
-            cursor: pointer;
-            /* İstersen tıklanabilir hissi verir */
+        .left-nav ul.pattern {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .left-nav ul.pattern li {
+            position: relative;
+        }
+
+        .left-nav ul.pattern li ul {
+            display: block !important;
+            /* forces submenu visible */
+            position: static !important;
+            /* ensures it's in flow */
+            height: auto !important;
+            /* overrides any height:0 */
+            overflow: visible !important;
+            /* overrides hidden */
+            margin-left: 10px;
+            /* optional indentation */
         }
     </style>
 
