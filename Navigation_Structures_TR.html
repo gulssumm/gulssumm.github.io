@@ -2,212 +2,164 @@
 <html class="no-js" lang="tr">
 
 <head>
-    <script charset="utf-8" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=FC38Hc5A" type="text/javascript"></script>
-    <script charset="utf-8" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" type="text/javascript"></script>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.RufflePlayer.config = { "autoplay": "on", "unmuteOverlay": "hidden", "showSwfDownload": true };
-    </script>
-    <script src="meego_patterns/js/ruffle.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        __wm.init("https://web.archive.org/web");
-        __wm.wombat(
-            "http://harmattan-dev.nokia.com:80/docs/ux/pages/Navigation_Structures_TR.html",
-            "20120110183559",
-            "https://web.archive.org/",
-            "web",
-            "https://web-static.archive.org/_static/",
-            "1326220559"
-        );
-    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Navigasyon Yapıları</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="meego.css">
-    <link rel="stylesheet" href="duzenler.css">
-    <style>
-        .header a {
-            display: block;
-            text-align: center;
-            font-weight: bold;
-            font-size: 32px;
-            margin: 20px 0;
-        }
-        /* ensures paging bar sits below floated columns like .pageLeft / .left-nav */
-        .content-paging { clear: both; text-align: center; margin: 20px 0; }
-        .content-paging a { margin: 0 6px; }
-    </style>
-
-    <script src="meego_patterns/js/modernizr-1.7.min.js"></script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-25671318-1']);
-        _gaq.push(['_trackPageview']);
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20120110183559/https://ssl' : 'https://web.archive.org/web/20120110183559/http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
+    <link rel="stylesheet" href="mydesign.css">
 </head>
 
 <body>
+    <!-- Full width header -->
+    <div class="header">
+        <a>UX REHBERI</a>
+    </div>
+
+    <!-- Main wrapper -->
     <div class="wrap clearfix">
-        <div class="bg-top">
-            <div class="bg-bot">
-                <div class="header">
-                    <a>UX REHBERI</a>
-                </div>
-                <div class="content clearfix">
-                    <div class="left-nav">
-                        <ul class="pattern">
-                            <li><a href="#">Düzenler</a></li>
-                            <li>
-                                <!--this is a section title-->
-                                <ul>
-                                    <!--this is a list of the pages in the section-->
-                                    <li><a href="Navigation_Structures_TR.html" class="active">Navigasyon Yapıları</a></li>
-                                    <li><a href="Backstack_TR.html">Gezinme Geçmişi</a></li>
-                                    <li><a href="Deleting_TR.html">Silme İşlemi</a></li>
-                                    <li><a href="Empty_States_TR.html">Boş Durum Ekranları</a></li>
-                                    <li><a href="Error_Handling_TR.html">Hata Yönetimi</a></li>
-                                    <li><a href="Fast_Scroll_TR.html">Hızlı Kaydırma</a></li>
-                                    <li><a href="Full_Screen_TR.html">Tam Ekran</a></li>
-                                    <li><a href="Launch_Image_TR.html">Başlangıç Görseli</a></li>
-                                    <li><a href="Multiple_Selection_TR.html">Çoklu Seçim</a></li>
-                                    <li><a href="Portrait_vs_Landscape_TR.html">Dikey ve Yatay Mod</a></li>
-                                    <li><a href="Saving_Confirmation_TR.html">Kaydetme ve Onaylama</a></li>
-                                    <li><a href="Search_and_Filter_TR.html">Arama ve Filtreleme</a></li>
-                                    <li><a href="Sheets_TR.html">Alt Sayfalar</a></li>
-                                    <li><a href="Text_Input_TR.html">Metin Giriş Alanı</a></li>
-                                </ul>
-                            </li>
+        <div class="content clearfix">
+            <!-- Left navigation -->
+            <div class="left-nav">
+                <ul class="pattern">
+                    <li><a href="#">Düzenler</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="Navigation_Structures_TR.html" class="active">Navigasyon Yapıları</a></li>
+                            <li><a href="Backstack_TR.html">Gezinme Geçmişi</a></li>
+                            <li><a href="Deleting_TR.html">Silme İşlemi</a></li>
+                            <li><a href="Empty_States_TR.html">Boş Durum Ekranları</a></li>
+                            <li><a href="Error_Handling_TR.html">Hata Yönetimi</a></li>
+                            <li><a href="Fast_Scroll_TR.html">Hızlı Kaydırma</a></li>
+                            <li><a href="Full_Screen_TR.html">Tam Ekran</a></li>
+                            <li><a href="Launch_Image_TR.html">Başlangıç Görseli</a></li>
+                            <li><a href="Multiple_Selection_TR.html">Çoklu Seçim</a></li>
+                            <li><a href="Portrait_vs_Landscape_TR.html">Dikey ve Yatay Mod</a></li>
+                            <li><a href="Saving_Confirmation_TR.html">Kaydetme ve Onaylama</a></li>
+                            <li><a href="Search_and_Filter_TR.html">Arama ve Filtreleme</a></li>
+                            <li><a href="Sheets_TR.html">Alt Sayfalar</a></li>
+                            <li><a href="Text_Input_TR.html">Metin Giriş Alanı</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main content -->
+            <div id="main-content">
+                <div class="pageLeft">
+                    <h1 class="page-title">Navigasyon Yapıları</h1>
+
+                    <div class="intro">
+                        <h1>Genel Bakış</h1>
+                        <p>Kullanıcılarınızın uygulamanızın ana bölümleri veya modları arasında hareket etme
+                            şekli, uygulamanızın kullanıcı deneyiminin merkezindedir. Geliştirme projenize
+                            başlamadan önce, uygulamanız için en uygun ana navigasyon yapısı türünü dikkatli bir
+                            şekilde değerlendirmenizi öneririz.</p>
+                        <p>Bu sayfada, en popüler navigasyon yapılarının açıklamasını bulacaksınız. Bunlar size
+                            uygulamanızın navigasyon yapısını tasarlamak için bir başlangıç noktası ve yön
+                            sunar.</p>
+                    </div>
+                    <!--intro-->
+
+                    <div class="category committed">
+                        <h1>Sekme Çubuğu Navigasyonu</h1>
+
+                        <h2>Kullanım</h2>
+                        <p>Sekme çubuğu genellikle ekranın alt kısmında kullanılır ve farklı alanlar veya modlar
+                            arasında hızlı erişim sağlar. Bu modeli sınırlı ve sabit ana bölümler veya modlara
+                            sahip uygulamalar için kullanmalısınız.</p>
+
+                        <h2>Sekme çubuğu içeriği</h2>
+                        <p>Sekme çubuğu yalnızca farklı uygulama modları veya görünümleri için navigasyon
+                            seçeneklerini (maksimum beş) göstermelidir. Eylem Menüsünü veya eylemleri (örneğin
+                            "Yeni Mesaj Oluştur") asla çubuğa eklemeyin. Bunun yerine, bu eylemleri karşılamak
+                            için İçerik alanında butonlar oluşturun. Ayrıca, bir uygulamadaki navigasyon
+                            seçenekleri zaman içinde değişmemeli, bu nedenle yeni yüklenen uzantıları karşılamak
+                            için bunları kullanmayın.</p>
+
+                        <h2>Sekmeler sabitlenir</h2>
+                        <p>Sekmeler arasında gezinirken, her sekmenin en son erişilen görünümü saklanır ve
+                            kullanıcı sekmeye döndüğünde sunulur. Ayrıca, bu görünümlerde yapılan eylemler
+                            sekmeler arasında gezinirken silinmez. Örnekler Arama ve giriş formudur: Arama
+                            sonucu silinmez ve kullanıcı oturumu kapatılmaz.</p>
+
+                        <p>Ayrıca, aşağıdaki kuralları ve hususları akılda tutun:</p>
+                        <ul>
+                            <li>Kullanıcı uygulamanızı başlattığında, uygulamanızı en son navigasyon durumunda
+                                açılacak şekilde ayarlayabilir veya her zaman belirli bir sekmede açılacak
+                                şekilde ayarlayabilirsiniz.</li>
+                            <li>Seçilen sekme kullanıcıyı desteklemek için yolculuk boyunca her zaman
+                                vurgulanır.</li>
+                            <li>Seçilen sekmeye dokunmak kullanıcıyı mevcut sekmenin üst düzeyine götürür.</li>
                         </ul>
                     </div>
+                    <!--category-->
 
-                    <div id="main-content">
-                        <div class="pageLeft">
-                            <h1 class="page-title">Navigasyon Yapıları</h1>
+                    <div class="category committed">
+                        <h1>Detaylı Navigasyon</h1>
 
-                            <div class="intro">
-                                <h1>Genel Bakış</h1>
-                                <p>Kullanıcılarınızın uygulamanızın ana bölümleri veya modları arasında hareket etme
-                                    şekli, uygulamanızın kullanıcı deneyiminin merkezindedir. Geliştirme projenize
-                                    başlamadan önce, uygulamanız için en uygun ana navigasyon yapısı türünü dikkatli bir
-                                    şekilde değerlendirmenizi öneririz.</p>
-                                <p>Bu sayfada, en popüler navigasyon yapılarının açıklamasını bulacaksınız. Bunlar size
-                                    uygulamanızın navigasyon yapısını tasarlamak için bir başlangıç noktası ve yön
-                                    sunar.</p>
-                            </div>
-                            <!--intro-->
+                        <h2>Kullanım</h2>
+                        <p>Detaylı navigasyon modeli, üst düzeyde bir uygulamanın tam navigasyon yapısına erişim
+                            sağlar. Kullanıcının kategoriler aracılığıyla uygulamanın bilgi yapısının
+                            hiyerarşisinde aşağı doğru giderek istenen içerik öğesini bulmasına olanak tanır.
+                            Kullanıcı yapıda aşağı doğru hareket ederken, önceki düzeye navigasyonu
+                            kolaylaştıran bir Geri butonu kullanılabilir hale gelir.</p>
 
-                            <div class="category committed">
-                                <h1>Sekme Çubuğu Navigasyonu</h1>
+                        <h2>Düzenler listelerle sınırlı değildir</h2>
+                        <p>Detaylı navigasyonlar uygulamanın belirli bir bilgi yapısını ima edebilse de,
+                            uygulamanın düzenini kısıtlamaz veya sınırlamaz. Yaygın düzenler liste görünümü,
+                            ızgara görünümü veya bölünmüş görünümde ikisinin kombinasyonunu içerir.</p>
 
-                                <h2>Kullanım</h2>
-                                <p>Sekme çubuğu genellikle ekranın alt kısmında kullanılır ve farklı alanlar veya modlar
-                                    arasında hızlı erişim sağlar. Bu modeli sınırlı ve sabit ana bölümler veya modlara
-                                    sahip uygulamalar için kullanmalısınız.</p>
+                        <h2>Kategoriler ve içerik öğeleri birbirini dışlamaz</h2>
+                        <p>Kategoriler ve içerik öğeleri hiyerarşinin herhangi bir düzeyinde bir arada
+                            bulunabilir. Bunu akılda tutarak, basıldıklarında farklı sonuçlar verebileceği için
+                            ikisi arasında ayrım yapmayı düşünebilirsiniz. Daha spesifik olarak, kategoriler
+                            hiyerarşide daha derine inerken içerik öğeleri bir detay görünümü açtığından,
+                            bunları görsel bir işleme veya gruplama yoluyla ayırt etmek kullanıcı beklentilerini
+                            daha iyi karşılayabilir.</p>
+                    </div>
+                    <!--category-->
 
-                                <h2>Sekme çubuğu içeriği</h2>
-                                <p>Sekme çubuğu yalnızca farklı uygulama modları veya görünümleri için navigasyon
-                                    seçeneklerini (maksimum beş) göstermelidir. Eylem Menüsünü veya eylemleri (örneğin
-                                    "Yeni Mesaj Oluştur") asla çubuğa eklemeyin. Bunun yerine, bu eylemleri karşılamak
-                                    için İçerik alanında butonlar oluşturun. Ayrıca, bir uygulamadaki navigasyon
-                                    seçenekleri zaman içinde değişmemeli, bu nedenle yeni yüklenen uzantıları karşılamak
-                                    için bunları kullanmayın.</p>
+                    <div class="category committed">
+                        <h1>Sekme Çubuğu + Geri Navigasyon</h1>
 
-                                <h2>Sekmeler sabitlenir</h2>
-                                <p>Sekmeler arasında gezinirken, her sekmenin en son erişilen görünümü saklanır ve
-                                    kullanıcı sekmeye döndüğünde sunulur. Ayrıca, bu görünümlerde yapılan eylemler
-                                    sekmeler arasında gezinirken silinmez. Örnekler Arama ve giriş formudur: Arama
-                                    sonucu silinmez ve kullanıcı oturumu kapatılmaz.</p>
+                        <h2>Kullanım</h2>
+                        <p>Üst düzey navigasyona kalıcı erişim gerektiren çok düzeyli bilgi hiyerarşilerine
+                            sahip daha karmaşık yapılar için, Detaylı navigasyon ve Sekme çubuğu
+                            işlevselliğini birleştirmek gerekli olabilir.</p>
 
-                                <p>Ayrıca, aşağıdaki kuralları ve hususları akılda tutun:</p>
-                                <ul>
-                                    <li>Kullanıcı uygulamanızı başlattığında, uygulamanızı en son navigasyon durumunda
-                                        açılacak şekilde ayarlayabilir veya her zaman belirli bir sekmede açılacak
-                                        şekilde ayarlayabilirsiniz.</li>
-                                    <li>Seçilen sekme kullanıcıyı desteklemek için yolculuk boyunca her zaman
-                                        vurgulanır.</li>
-                                    <li>Seçilen sekmeye dokunmak kullanıcıyı mevcut sekmenin üst düzeyine götürür.</li>
-                                </ul>
-                            </div>
-                            <!--category-->
+                        <h2>Kalıcı 'geri' düğmesi</h2>
+                        <p>Bu model Sekme çubuğu modelinin basit ana navigasyonundan yararlanır, ancak Geri
+                            butonu için özel ve kalıcı bir alan sunar. Sonuç olarak, yalnızca dört sekme
+                            kullanılabilir.</p>
+                        <p>Tutarlılığı pekiştirmek ve karışıklığı ortadan kaldırmak için uygulama deneyimi
+                            boyunca her zaman Geri butonu davranışını koruyun. Geri kullanılamadığında (yani
+                            üst düzey görünümlerde), basitçe etkin olmayan durumunu kullanın.</p>
 
-                            <div class="category committed">
-                                <h1>Detaylı Navigasyon</h1>
+                        <h2>Geri düğmesi sekme içinde geçmiş tutar</h2>
+                        <p>Geri butonu seçilen sekme içinde tarihsel olarak gezinir ve sekmeler arasında
+                            gezinmek için kullanılmamalıdır.</p>
+                    </div>
+                </div><!--pageLeft-->
 
-                                <h2>Kullanım</h2>
-                                <p>Detaylı navigasyon modeli, üst düzeyde bir uygulamanın tam navigasyon yapısına erişim
-                                    sağlar. Kullanıcının kategoriler aracılığıyla uygulamanın bilgi yapısının
-                                    hiyerarşisinde aşağı doğru giderek istenen içerik öğesini bulmasına olanak tanır.
-                                    Kullanıcı yapıda aşağı doğru hareket ederken, önceki düzeye navigasyonu
-                                    kolaylaştıran bir Geri butonu kullanılabilir hale gelir.</p>
-
-                                <h2>Düzenler listelerle sınırlı değildir</h2>
-                                <p>Detaylı navigasyonlar uygulamanın belirli bir bilgi yapısını ima edebilse de,
-                                    uygulamanın düzenini kısıtlamaz veya sınırlamaz. Yaygın düzenler liste görünümü,
-                                    ızgara görünümü veya bölünmüş görünümde ikisinin kombinasyonunu içerir.</p>
-
-                                <h2>Kategoriler ve içerik öğeleri birbirini dışlamaz</h2>
-                                <p>Kategoriler ve içerik öğeleri hiyerarşinin herhangi bir düzeyinde bir arada
-                                    bulunabilir. Bunu akılda tutarak, basıldıklarında farklı sonuçlar verebileceği için
-                                    ikisi arasında ayrım yapmayı düşünebilirsiniz. Daha spesifik olarak, kategoriler
-                                    hiyerarşide daha derine inerken içerik öğeleri bir detay görünümü açtığından,
-                                    bunları görsel bir işleme veya gruplama yoluyla ayırt etmek kullanıcı beklentilerini
-                                    daha iyi karşılayabilir.</p>
-                            </div>
-                            <!--category-->
-
-                            <div class="category committed">
-                                <h1>Sekme Çubuğu + Geri Navigasyon</h1>
-
-                                    <h2>Kullanım</h2>
-                                    <p>Üst düzey navigasyona kalıcı erişim gerektiren çok düzeyli bilgi hiyerarşilerine
-                                        sahip daha karmaşık yapılar için, Detaylı navigasyon ve Sekme çubuğu
-                                        işlevselliğini birleştirmek gerekli olabilir.</p>
-
-                                    <h2>Kalıcı 'geri' düğmesi</h2>
-                                    <p>Bu model Sekme çubuğu modelinin basit ana navigasyonundan yararlanır, ancak Geri
-                                        butonu için özel ve kalıcı bir alan sunar. Sonuç olarak, yalnızca dört sekme
-                                        kullanılabilir.</p>
-                                    <p>Tutarlılığı pekiştirmek ve karışıklığı ortadan kaldırmak için uygulama deneyimi
-                                        boyunca her zaman Geri butonu davranışını koruyun. Geri kullanılamadığında (yani
-                                        üst düzey görünümlerde), basitçe etkin olmayan durumunu kullanın.</p>
-
-                                    <h2>Geri düğmesi sekme içinde geçmiş tutar</h2>
-                                    <p>Geri butonu seçilen sekme içinde tarihsel olarak gezinir ve sekmeler arasında
-                                        gezinmek için kullanılmamalıdır.</p>
-                                </div>
-                            </div> <!-- properly closed .category -->
-                        </div><!--pageLeft-->
-
-                        <div class="content-paging">
-                            <a href="#" class="to-top">başa dön</a>
-                            <a class="next" href="#">Sonraki konu</a>
-                            <span>|</span>
-                            <a class="prev" href="#">Önceki konu</a>
-                        </div>
-                    </div><!--main-content-->
-                </div><!--content-->
-            </div><!--bg-bot-->
-        </div><!--bg-top-->
+                <!-- Paging -->
+                <div class="content-paging">
+                    <a href="#" class="to-top">başa dön</a>
+                    <a class="next" href="#">Sonraki konu</a>
+                    <span>|</span>
+                    <a class="prev" href="#">Önceki konu</a>
+                </div>
+            </div><!--main-content-->
+        </div><!--content-->
     </div><!--wrap-->
 
+    <!-- Full width footer -->
     <div class="footer">
         <div class="foot-content">
-            <a class="nokia white">
-                <span>Nokia</span>
-            </a>
+            <a class="nokia white"><span>Nokia</span></a>
             <small>
                 <a class="legal">©2011 Nokia Corporation - Tüm hakları saklıdır.</a>
             </small>
         </div>
-    </div><!--footer-->
-
-    <script src="meego_patterns/js/navigation.js"></script>
+    </div>
 </body>
 </html>
