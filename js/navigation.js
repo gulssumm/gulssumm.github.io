@@ -1,7 +1,7 @@
 $(document).ready(function() {
     const pages = [
         "Navigation_Structures_TR.html",
-        "Backstack_TR.html",
+        "Backstack_TR.html", 
         "Deleting_TR.html",
         "Empty_States_TR.html",
         "Error_Handling_TR.html",
@@ -13,21 +13,21 @@ $(document).ready(function() {
         "Saving_Confirmation_TR.html",
         "Search_and_Filter_TR.html",
         "Sheets_TR.html",
-        "Text_Input_TR.html",
+        "Text_Input_TR.html"
     ];
 
     const current = window.location.pathname.split("/").pop();
     const index = pages.indexOf(current);
 
     if(index > 0) {
-        $(".prev").attr("href", pages[index - 1]);
+        $(".prev").attr("href", pages[index - 1]).show();
     } else {
-        $(".prev").hide(); // hide if no previous
+        $(".prev").hide();
     }
 
-    if(index < pages.length - 1) {
-        $(".next").attr("href", pages[index + 1]);
+    if(index == 0 && index < pages.length - 1) {
+        $(".next").attr("href", pages[index + 1]).show();
     } else {
-        $(".next").hide(); // hide if no next
+        $(".next").hide();
     }
 });

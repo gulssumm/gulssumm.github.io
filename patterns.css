@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Main container */
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
+
+.header a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+/* Content layout */
+.content {
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+/* Left navigation */
+.left-nav {
+    width: 250px;
+    background: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+/* Navigation pattern structure */
+.pattern {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main section title (Düzenler) */
+.pattern > li > a {
+    display: block;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    background: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Sub-navigation container */
+.pattern > li > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+/* Individual navigation links */
+.pattern > li > ul > li {
+    border-bottom: 1px solid #eee;
+}
+
+.pattern > li > ul > li > a {
+    display: block;
+    padding: 12px 30px;
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.pattern > li > ul > li > a:hover {
+    background: #f0f0f0;
+    color: #333;
+    padding-left: 35px;
+}
+
+/* Active state for current page */
+.pattern > li > ul > li > a.active,
+.pattern > li > ul > li > a:focus {
+    background: #007acc;
+    color: white;
+    font-weight: 500;
+}
+
+.pattern > li > ul > li > a.active:hover {
+    background: #005a99;
+    padding-left: 30px;
+}
+
+/* Add subtle left border for active item */
+.pattern > li > ul > li > a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #0056b3;
+}
+
+/* Main content area - work with meego.css */
+#main-content {
+    /* Don't override flex, let meego.css handle layout */
+    padding: 30px;
+}
+
+/* Ensure main content is visible */
+#main-content {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.pageLeft {
+    max-width: 800px;
+}
+
+/* Typography */
+.page-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 10px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.intro p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+}
+
+/* Content categories */
+.category {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 4px solid #007acc;
+    background: #fafafa;
+}
+
+.category.committed {
+    border-left-color: #28a745;
+}
+
+.category h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 10px;
+}
+
+.category h2 {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    color: #555;
+    font-weight: 600;
+}
+
+.category p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+    text-align: justify;
+}
+
+.category ul {
+    margin: 15px 0 15px 20px;
+}
+
+.category li {
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Content paging */
+.content-paging {
+    clear: both;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+.content-paging a {
+    margin: 0 6px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #007acc;
+    border: 1px solid #007acc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.content-paging a:hover {
+    background: #007acc;
+    color: white;
+}
+
+.content-paging .to-top {
+    background: #007acc;
+    color: white;
+}
+
+.content-paging span {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .left-nav {
+        width: 100%;
+        order: 2;
+        border-right: none;
+        border-top: 1px solid #ddd;
+    }
+    
+    .left-nav ul ul {
+        display: none;
+    }
+    
+    .left-nav ul ul.show {
+        display: block;
+    }
+    
+    .left-nav > ul > li > a::after {
+        content: " ▼";
+        float: right;
+    }
+    
+    #main-content {
+        order: 1;
+        padding: 20px;
+    }
+    
+    .header a {
+        font-size: 24px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .category {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-content {
+        padding: 15px;
+    }
+    
+    .header a {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    
+    .page-title {
+        font-size: 20px;
+    }
+    
+    .intro h1 {
+        font-size: 20px;
+    }
+    
+    .category h1 {
+        font-size: 18px;
+    }
+    
+    .category h2 {
+        font-size: 16px;
+    }
+}
