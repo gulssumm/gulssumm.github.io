@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="tr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -16,11 +17,13 @@
             font-size: 32px;
             margin: 20px 0;
         }
+
         .content-paging {
             clear: both;
             text-align: center;
             margin: 20px 0;
         }
+
         .content-paging a {
             margin: 0 6px;
         }
@@ -63,24 +66,36 @@
                         <div class="pageLeft">
                             <h1 class="page-title">Gezinme Geçmişi</h1>
                             <div class="intro">
-                                
-                                <h2>Üst düzey görünümlerde Geri butonu yoktur, sonraki sayfalarda vardır</h2>
-                                <p>Bir uygulamanın Ana ekranı (yani kullanıcıların o uygulamayı ilk kez başlattığında gördükleri ekran) Geri butonu sağlamaz, sonraki sayfalar sağlar. Sekme Çubuğu + Geri Navigasyon modelini kullanan uygulamalar için bir istisna geçerlidir. Bu durumda, Geri butonu görünür ancak üst düzeyde devre dışıdır.</p>
 
-                                <h2>Üst sayfaya dönmek Geçmişi temizler</h2>	
-                                <p>Kullanıcı bir üst düzey sayfaya döndüğünde, Geri butonu her zaman sıfırlanır ve devre dışı kalır.</p>
-                                
-                                <h2>Geri her zaman önceki görünüme döner</h2>	
-                                <p>İstisnasız olarak, Geri butonu kullanıcıyı her zaman az önce görüntülediği ekrana götürmelidir. Onu hiyerarşideki başka bir ekrana götürmemelidir. Örneğin, kullanıcı üst düzey Müzik sayfasından belirli bir albümün Detay Görünümüne bağlantı verirse, ardından Geri butonuna basarsa, o albümün ait olduğu kategori sayfasına DEĞİL, üst düzey Müzik sayfasına geri dönmelidir.</p>
-                                <p>Bu şekilde, Gezinme Geçmişi modeli tarihseldir (yani kullanıcıları geçmişlerinde geri götürür) ve hiyerarşik değildir (yani kullanıcıları hiyerarşideki o görünümden gelip gelmediklerine bakılmaksızın uygulama hiyerarşisinde önceden tanımlanmış bir düzeye götürür).</p>
+                                <h2>Üst düzey görünümlerde Geri butonu yoktur, sonraki sayfalarda vardır</h2>
+                                <p>Bir uygulamanın Ana ekranı (yani kullanıcıların o uygulamayı ilk kez başlattığında
+                                    gördükleri ekran) Geri butonu sağlamaz, sonraki sayfalar sağlar. Sekme Çubuğu + Geri
+                                    Navigasyon modelini kullanan uygulamalar için bir istisna geçerlidir. Bu durumda,
+                                    Geri butonu görünür ancak üst düzeyde devre dışıdır.</p>
+
+                                <h2>Üst sayfaya dönmek Geçmişi temizler</h2>
+                                <p>Kullanıcı bir üst düzey sayfaya döndüğünde, Geri butonu her zaman sıfırlanır ve devre
+                                    dışı kalır.</p>
+
+                                <h2>Geri her zaman önceki görünüme döner</h2>
+                                <p>İstisnasız olarak, Geri butonu kullanıcıyı her zaman az önce görüntülediği ekrana
+                                    götürmelidir. Onu hiyerarşideki başka bir ekrana götürmemelidir. Örneğin, kullanıcı
+                                    üst düzey Müzik sayfasından belirli bir albümün Detay Görünümüne bağlantı verirse,
+                                    ardından Geri butonuna basarsa, o albümün ait olduğu kategori sayfasına DEĞİL, üst
+                                    düzey Müzik sayfasına geri dönmelidir.</p>
+                                <p>Bu şekilde, Gezinme Geçmişi modeli tarihseldir (yani kullanıcıları geçmişlerinde geri
+                                    götürür) ve hiyerarşik değildir (yani kullanıcıları hiyerarşideki o görünümden gelip
+                                    gelmediklerine bakılmaksızın uygulama hiyerarşisinde önceden tanımlanmış bir düzeye
+                                    götürür).</p>
                             </div>
                         </div><!--pageLeft-->
 
+                        <!-- Paging -->
                         <div class="content-paging">
                             <a href="#" class="to-top">başa dön</a>
-                            <a class="next disabled" href="#">Sonraki konu</a>
+                            <a class="next" href="#">Önceki konu</a>
                             <span>|</span>
-                            <a class="prev disabled" href="#">Önceki konu</a>
+                            <a class="prev" href="#">Sonraki konu</a>
                         </div>
                     </div><!--main-content-->
                 </div><!--content-->
@@ -98,5 +113,6 @@
             </small>
         </div>
     </div><!--footer-->
+    <script src="navigation.js" defer></script>
 </body>
 </html>
