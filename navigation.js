@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Find current page index
     const currentIndex = pages.indexOf(currentPage);
     
-    // Setup next link (Önceki konu in your HTML)
+    // Setup next link 
     const nextLink = document.querySelector('.content-paging .next');
     if (nextLink && currentIndex > 0) {
         nextLink.href = pages[currentIndex - 1];
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nextLink.style.display = 'none';
     }
     
-    // Setup previous link (Sonraki konu in your HTML)
+    // Setup previous link 
     const prevLink = document.querySelector('.content-paging .prev');
     if (prevLink && currentIndex !== -1 && currentIndex < pages.length - 1) {
         prevLink.href = pages[currentIndex + 1];

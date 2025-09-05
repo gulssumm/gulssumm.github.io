@@ -23,6 +23,12 @@
         .content-paging a {
             margin: 0 6px;
         }
+        .description-block {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
     </style>
 </head>
 
@@ -34,12 +40,11 @@
                     <a>UX REHBERİ</a>
                 </div>
                 <div class="content clearfix">
-                    <div class="left-nav"><!-- CHANGED LEFT NAV -->
+                    <div class="left-nav">
                         <ul class="pattern">
                             <li><a href="#">Düzenler</a></li>
-                            <!--this is a section title-->
                             <li>
-                                <ul> <!--this is a list of the pages in the section-->
+                                <ul>
                                     <li><a href="Navigation_Structures_TR.html">Navigasyon Yapıları</a></li>
                                     <li><a href="Backstack_TR.html">Gezinme Geçmişi</a></li>
                                     <li><a href="Deleting_TR.html">Silme İşlemi</a></li>
@@ -65,30 +70,22 @@
 
                                 <div class="category committed">
                                     <h1>Sanal Klavye</h1>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_uppercase_comm-thumb.png" alt="Büyük harf"></a>
-                                            <div class="figcaption">Büyük harf</div>
-                                        </div>
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_lowercase_comm-thumb.png" alt="Küçük harf"></a>
-                                            <div class="figcaption">Küçük harf</div>
-                                        </div>
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_pressed_comm-thumb.png" alt="Basılı durum"></a>
-                                            <div class="figcaption">Basılı durum</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Büyük harf:</b> Klavye varsayılan olarak büyük harf durumunda açılır.</p>
+                                    </div>
+                                    <div class="description-block">
+                                        <p><b>Küçük harf:</b> Shift tuşuna dokunulduğunda küçük harfe geçilir.</p>
+                                    </div>
+                                    <div class="description-block">
+                                        <p><b>Basılı durum:</b> Kullanıcı bir harf, sayı veya sembole dokunduğunda karakter büyür.</p>
                                     </div>
                                     <p>Sanal klavye varsayılan olarak büyük harfte görüntülenir. Shift butonuna dokunmak küçük harf durumuna döner. Her harf, sayı veya sembol dokunuş sırasında büyür.</p>
                                 </div>
 
                                 <div class="category committed">
                                     <h1>Sanal Sayı Tuştakımı</h1>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/keyboard_numbers_comm-thumb.png" alt="Sayılar"></a>
-                                            <div class="figcaption">Sayısal</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Sayısal:</b> Sayısal form alanı etkinleştirildiğinde otomatik olarak açılır. '+ * #' butonuna dokunmak mevcut semboller arasında geçiş yapar.</p>
                                     </div>
                                     <p>Sayı tuştakımı, sayısal form alanı etkinleştirildiğinde otomatik olarak tetiklenir. Sayı tuştakımından '+ * #' butonuna dokunmak mevcut semboller arasında geçiş yapar.</p>
                                 </div>
@@ -103,19 +100,13 @@
                                     <p>Kullanıcı metin alanının dışına dokunarak veya "Tamam" butonuna dokunarak sanal klavyeyi kapatabilir. Sanal klavyenin kullanıcının yukarı çekebileceği bir çekmece gibi davranmadığını, kullanıcı metin alanını tekrar etkinleştirdiğinde tekrar çıkacağını unutmayın.</p>
                                     
                                     <h2>Metin seçme</h2>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_select-thumb.png" alt="Metin seçme"></a>
-                                            <div class="figcaption">Metin seçmek için sürükleyin</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Metin seçmek için sürükleyin:</b> Kullanıcı parmağını sürükleyerek metni seçebilir.</p>
                                     </div>
 
                                     <h2>Büyüteç</h2>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_magnifier-thumb.png" alt="Büyüteç"></a>
-                                            <div class="figcaption">Metin büyütecini almak için uzun basın</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Metin büyütecini almak için uzun basın:</b> Kullanıcı imleci hassas bir şekilde konumlandırabilir.</p>
                                     </div>
                                 </div>
 
@@ -123,31 +114,21 @@
                                     <h1>Gelişmiş Davranışlar</h1>
 
                                     <h2>Kopyala ve Yapıştır</h2>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_copypaste-thumb.png" alt="Kopyala ve yapıştır"></a>
-                                            <div class="figcaption">Metin seçildiğinde kopyala ve yapıştır seçenekleri otomatik olarak görünür</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Kopyala ve yapıştır:</b> Metin seçildiğinde ilgili seçenekler otomatik olarak görünür.</p>
                                     </div>
 
                                     <h2>Zengin metin düzenleme</h2>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_format-thumb.png" alt="Zengin metin düzenleme"></a>
-                                            <div class="figcaption">Zengin metin düzenleme</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Zengin metin düzenleme:</b> Biçimlendirme seçenekleri kullanıcıya sunulur.</p>
                                     </div>
                                     
                                     <h2>Metin düzeltme</h2>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_correct-thumb.png" alt="Yazarken kelime önerileri"></a>
-                                            <div class="figcaption">Yazarken kelime önerileri</div>
-                                        </div>
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_misspelled-thumb.png" alt="Yanlış yazılmış kelime vurgulanır"></a>
-                                            <div class="figcaption">Yanlış yazılmış kelime vurgulanır</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Yazarken kelime önerileri:</b> Kullanıcı önerilen kelimeyi kabul etmek için ona dokunabilir.</p>
+                                    </div>
+                                    <div class="description-block">
+                                        <p><b>Yanlış yazılmış kelime vurgulanır:</b> Kullanıcı kelimeye dokunduğunda alternatif yazımlar gösterilir.</p>
                                     </div>
 
                                     <p>Nokia N9 yanlış yazılmış kelimeleri iki şekilde düzeltmeye yardımcı olur:</p>
@@ -157,18 +138,12 @@
                                     </ul>
 
                                     <h2>Klavye dilleri</h2>
-                                    <div class="thumbnails">
-                                        <div class="figure">
-                                            <a href="#"><img src="/web/20120110183559im_/http://harmattan-dev.nokia.com/docs/ux/images/building_blocks/Patterns/text_language-thumb.png" alt="Klavye dili değiştirme"></a>
-                                            <div class="figcaption">Klavye dilini değiştirdikten sonra görüntülenen başlık</div>
-                                        </div>
+                                    <div class="description-block">
+                                        <p><b>Klavye dili değiştirme:</b> Ayarlarda birden fazla klavye etkinleştirildiğinde, kullanıcı klavye alanında sola ve sağa kaydırarak diller arasında geçiş yapabilir. Geçişten sonra seçilen dil başlığı kısa süre görüntülenir.</p>
                                     </div>
-
-                                    <p>Ayarlarda birden fazla klavye etkinleştirildiğinde, kullanıcılar klavyeler arasında geçiş yapmak için klavye alanında sola ve sağa kaydırabilir. Geçiş yaptıktan sonra başlık bir saniye gösterilir.</p>
                                 </div>
                             </div>
-                            <!--intro-->
-                        </div><!--pageLeft-->
+                        </div>
                         
                         <!-- Paging -->
                         <div class="content-paging">
@@ -177,11 +152,11 @@
                             <span>|</span>
                             <a class="prev" href="#">Sonraki konu</a>
                         </div>
-                    </div><!--main-content-->
-                </div><!--content-->
-            </div><!--bg-top-->
-        </div><!--bg-bot-->
-    </div><!--wrap-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div class="footer">
         <div class="foot-content">
@@ -192,7 +167,7 @@
                 <a class="legal">©2011 Nokia Corporation - Tüm hakları saklıdır.</a>
             </small>
         </div>
-    </div><!--footer-->
+    </div>
     <script src="navigation.js" defer></script>
 </body>
 </html>
